@@ -1,0 +1,61 @@
+Company,Role,Experience,Question,Difficulty,Topic
+Zomato,Software Engineer,Fresher,Explain REST principles and common HTTP methods.,Medium,APIs
+Zomato,Backend Engineer,Junior,What makes an API idempotent and why is it important?,Medium,APIs
+Zomato,Frontend Engineer,Mid-Level,Explain pagination and versioning strategies in APIs.,Medium,APIs
+Zomato,Data Engineer,Senior,Difference between REST and GraphQL.,Medium,APIs
+Zomato,Software Engineer,Staff,How do APIs handle authentication and authorization?,Medium,APIs
+Zomato,Backend Engineer,Fresher,Explain common API security vulnerabilities.,Medium,APIs
+Zomato,Frontend Engineer,Junior,Difference between SQL and NoSQL databases.,Medium,Databases
+Zomato,Data Engineer,Mid-Level,Explain database indexing and its impact on performance.,Medium,Databases
+Zomato,Software Engineer,Senior,What are ACID properties?,Medium,Databases
+Zomato,Backend Engineer,Staff,Explain normalization and denormalization.,Medium,Databases
+Zomato,Frontend Engineer,Fresher,What is database sharding?,Medium,Databases
+Zomato,Data Engineer,Junior,Explain replication and failover mechanisms.,Medium,Databases
+Zomato,Software Engineer,Mid-Level,Design a scalable URL shortening service.,Medium,System Design
+Zomato,Backend Engineer,Senior,Explain load balancing strategies.,Easy,System Design
+Zomato,Frontend Engineer,Staff,How would you design a notification system?,Medium,System Design
+Zomato,Data Engineer,Fresher,Explain horizontal vs vertical scaling.,Easy,System Design
+Zomato,Software Engineer,Junior,Design a basic caching strategy.,Medium,System Design
+Zomato,Backend Engineer,Mid-Level,Explain trade-offs in distributed system design.,Medium,System Design
+Zomato,Frontend Engineer,Senior,Explain process vs thread.,Easy,Operating Systems
+Zomato,Data Engineer,Staff,What is context switching?,Medium,Operating Systems
+Zomato,Software Engineer,Fresher,Explain virtual memory.,Easy,Operating Systems
+Zomato,Backend Engineer,Junior,What is a deadlock and how is it prevented?,Medium,Operating Systems
+Zomato,Frontend Engineer,Mid-Level,Explain scheduling algorithms.,Easy,Operating Systems
+Zomato,Data Engineer,Senior,Difference between user mode and kernel mode.,Medium,Operating Systems
+Zomato,Software Engineer,Staff,Explain how DNS works.,Easy,Networking
+Zomato,Backend Engineer,Fresher,Difference between TCP and UDP.,Medium,Networking
+Zomato,Frontend Engineer,Junior,What happens when you type a URL in a browser?,Medium,Networking
+Zomato,Data Engineer,Mid-Level,Explain HTTP vs HTTPS.,Easy,Networking
+Zomato,Software Engineer,Senior,What is a reverse proxy?,Medium,Networking
+Zomato,Backend Engineer,Staff,Explain latency vs bandwidth.,Easy,Networking
+Zomato,Frontend Engineer,Fresher,"Explain IaaS, PaaS, and SaaS.",Easy,Cloud Computing
+Zomato,Data Engineer,Junior,What is auto-scaling?,Medium,Cloud Computing
+Zomato,Software Engineer,Mid-Level,Explain cloud load balancing.,Easy,Cloud Computing
+Zomato,Backend Engineer,Senior,What is serverless computing?,Medium,Cloud Computing
+Zomato,Frontend Engineer,Staff,Explain multi-region deployment.,Easy,Cloud Computing
+Zomato,Data Engineer,Fresher,How does cloud monitoring work?,Medium,Cloud Computing
+Zomato,Software Engineer,Junior,Explain authentication vs authorization.,Medium,Security
+Zomato,Backend Engineer,Mid-Level,What is OAuth 2.0?,Medium,Security
+Zomato,Frontend Engineer,Senior,Explain common web security attacks.,Easy,Security
+Zomato,Data Engineer,Staff,What is encryption at rest and in transit?,Medium,Security
+Zomato,Software Engineer,Fresher,Explain role-based access control.,Easy,Security
+Zomato,Backend Engineer,Junior,What is zero-trust security?,Medium,Security
+Zomato,Frontend Engineer,Mid-Level,Explain CI/CD pipelines.,Easy,DevOps
+Zomato,Data Engineer,Senior,What is Docker used for?,Medium,DevOps
+Zomato,Software Engineer,Staff,Explain container orchestration.,Easy,DevOps
+Zomato,Backend Engineer,Fresher,Difference between blue-green and canary deployments.,Medium,DevOps
+Zomato,Frontend Engineer,Junior,What is infrastructure as code?,Medium,DevOps
+Zomato,Data Engineer,Mid-Level,Explain monitoring and logging.,Easy,DevOps
+Zomato,Software Engineer,Senior,Explain time and space complexity.,Easy,Data Structures & Algorithms
+Zomato,Backend Engineer,Staff,Difference between array and linked list.,Medium,Data Structures & Algorithms
+Zomato,Frontend Engineer,Fresher,Explain hashing and hash collisions.,Easy,Data Structures & Algorithms
+Zomato,Data Engineer,Junior,What is a balanced binary tree?,Medium,Data Structures & Algorithms
+Zomato,Software Engineer,Mid-Level,Explain BFS vs DFS.,Easy,Data Structures & Algorithms
+Zomato,Backend Engineer,Senior,What is dynamic programming?,Medium,Data Structures & Algorithms
+Zomato,Frontend Engineer,Staff,Explain object-oriented programming principles.,Medium,Behavioral / Fundamentals
+Zomato,Data Engineer,Fresher,What is SOLID design?,Medium,Behavioral / Fundamentals
+Zomato,Software Engineer,Junior,Explain MVC architecture.,Easy,Behavioral / Fundamentals
+Zomato,Backend Engineer,Mid-Level,Difference between abstraction and encapsulation.,Medium,Behavioral / Fundamentals
+Zomato,Frontend Engineer,Senior,Explain dependency injection.,Easy,Behavioral / Fundamentals
+Zomato,Data Engineer,Staff,What is clean code?,Medium,Behavioral / Fundamentals

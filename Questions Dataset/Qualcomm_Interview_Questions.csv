@@ -1,0 +1,61 @@
+Company,Role,Experience,Question,Difficulty,Topic
+Qualcomm,Software Engineer,Fresher,Explain REST principles and common HTTP methods.,Medium,APIs
+Qualcomm,Backend Engineer,Junior,What makes an API idempotent and why is it important?,Medium,APIs
+Qualcomm,Frontend Engineer,Mid-Level,Explain pagination and versioning strategies in APIs.,Medium,APIs
+Qualcomm,Data Engineer,Senior,Difference between REST and GraphQL.,Medium,APIs
+Qualcomm,Software Engineer,Staff,How do APIs handle authentication and authorization?,Medium,APIs
+Qualcomm,Backend Engineer,Fresher,Explain common API security vulnerabilities.,Medium,APIs
+Qualcomm,Frontend Engineer,Junior,Difference between SQL and NoSQL databases.,Medium,Databases
+Qualcomm,Data Engineer,Mid-Level,Explain database indexing and its impact on performance.,Medium,Databases
+Qualcomm,Software Engineer,Senior,What are ACID properties?,Medium,Databases
+Qualcomm,Backend Engineer,Staff,Explain normalization and denormalization.,Medium,Databases
+Qualcomm,Frontend Engineer,Fresher,What is database sharding?,Medium,Databases
+Qualcomm,Data Engineer,Junior,Explain replication and failover mechanisms.,Medium,Databases
+Qualcomm,Software Engineer,Mid-Level,Design a scalable URL shortening service.,Medium,System Design
+Qualcomm,Backend Engineer,Senior,Explain load balancing strategies.,Easy,System Design
+Qualcomm,Frontend Engineer,Staff,How would you design a notification system?,Medium,System Design
+Qualcomm,Data Engineer,Fresher,Explain horizontal vs vertical scaling.,Easy,System Design
+Qualcomm,Software Engineer,Junior,Design a basic caching strategy.,Medium,System Design
+Qualcomm,Backend Engineer,Mid-Level,Explain trade-offs in distributed system design.,Medium,System Design
+Qualcomm,Frontend Engineer,Senior,Explain process vs thread.,Easy,Operating Systems
+Qualcomm,Data Engineer,Staff,What is context switching?,Medium,Operating Systems
+Qualcomm,Software Engineer,Fresher,Explain virtual memory.,Easy,Operating Systems
+Qualcomm,Backend Engineer,Junior,What is a deadlock and how is it prevented?,Medium,Operating Systems
+Qualcomm,Frontend Engineer,Mid-Level,Explain scheduling algorithms.,Easy,Operating Systems
+Qualcomm,Data Engineer,Senior,Difference between user mode and kernel mode.,Medium,Operating Systems
+Qualcomm,Software Engineer,Staff,Explain how DNS works.,Easy,Networking
+Qualcomm,Backend Engineer,Fresher,Difference between TCP and UDP.,Medium,Networking
+Qualcomm,Frontend Engineer,Junior,What happens when you type a URL in a browser?,Medium,Networking
+Qualcomm,Data Engineer,Mid-Level,Explain HTTP vs HTTPS.,Easy,Networking
+Qualcomm,Software Engineer,Senior,What is a reverse proxy?,Medium,Networking
+Qualcomm,Backend Engineer,Staff,Explain latency vs bandwidth.,Easy,Networking
+Qualcomm,Frontend Engineer,Fresher,"Explain IaaS, PaaS, and SaaS.",Easy,Cloud Computing
+Qualcomm,Data Engineer,Junior,What is auto-scaling?,Medium,Cloud Computing
+Qualcomm,Software Engineer,Mid-Level,Explain cloud load balancing.,Easy,Cloud Computing
+Qualcomm,Backend Engineer,Senior,What is serverless computing?,Medium,Cloud Computing
+Qualcomm,Frontend Engineer,Staff,Explain multi-region deployment.,Easy,Cloud Computing
+Qualcomm,Data Engineer,Fresher,How does cloud monitoring work?,Medium,Cloud Computing
+Qualcomm,Software Engineer,Junior,Explain authentication vs authorization.,Medium,Security
+Qualcomm,Backend Engineer,Mid-Level,What is OAuth 2.0?,Medium,Security
+Qualcomm,Frontend Engineer,Senior,Explain common web security attacks.,Easy,Security
+Qualcomm,Data Engineer,Staff,What is encryption at rest and in transit?,Medium,Security
+Qualcomm,Software Engineer,Fresher,Explain role-based access control.,Easy,Security
+Qualcomm,Backend Engineer,Junior,What is zero-trust security?,Medium,Security
+Qualcomm,Frontend Engineer,Mid-Level,Explain CI/CD pipelines.,Easy,DevOps
+Qualcomm,Data Engineer,Senior,What is Docker used for?,Medium,DevOps
+Qualcomm,Software Engineer,Staff,Explain container orchestration.,Easy,DevOps
+Qualcomm,Backend Engineer,Fresher,Difference between blue-green and canary deployments.,Medium,DevOps
+Qualcomm,Frontend Engineer,Junior,What is infrastructure as code?,Medium,DevOps
+Qualcomm,Data Engineer,Mid-Level,Explain monitoring and logging.,Easy,DevOps
+Qualcomm,Software Engineer,Senior,Explain time and space complexity.,Easy,Data Structures & Algorithms
+Qualcomm,Backend Engineer,Staff,Difference between array and linked list.,Medium,Data Structures & Algorithms
+Qualcomm,Frontend Engineer,Fresher,Explain hashing and hash collisions.,Easy,Data Structures & Algorithms
+Qualcomm,Data Engineer,Junior,What is a balanced binary tree?,Medium,Data Structures & Algorithms
+Qualcomm,Software Engineer,Mid-Level,Explain BFS vs DFS.,Easy,Data Structures & Algorithms
+Qualcomm,Backend Engineer,Senior,What is dynamic programming?,Medium,Data Structures & Algorithms
+Qualcomm,Frontend Engineer,Staff,Explain object-oriented programming principles.,Medium,Behavioral / Fundamentals
+Qualcomm,Data Engineer,Fresher,What is SOLID design?,Medium,Behavioral / Fundamentals
+Qualcomm,Software Engineer,Junior,Explain MVC architecture.,Easy,Behavioral / Fundamentals
+Qualcomm,Backend Engineer,Mid-Level,Difference between abstraction and encapsulation.,Medium,Behavioral / Fundamentals
+Qualcomm,Frontend Engineer,Senior,Explain dependency injection.,Easy,Behavioral / Fundamentals
+Qualcomm,Data Engineer,Staff,What is clean code?,Medium,Behavioral / Fundamentals

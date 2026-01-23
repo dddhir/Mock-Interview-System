@@ -1,0 +1,61 @@
+Company,Role,Experience,Question,Difficulty,Topic
+Stripe,Software Engineer,Fresher,Explain REST principles and common HTTP methods.,Medium,APIs
+Stripe,Backend Engineer,Junior,What makes an API idempotent and why is it important?,Medium,APIs
+Stripe,Frontend Engineer,Mid-Level,Explain pagination and versioning strategies in APIs.,Medium,APIs
+Stripe,Data Engineer,Senior,Difference between REST and GraphQL.,Medium,APIs
+Stripe,Software Engineer,Staff,How do APIs handle authentication and authorization?,Medium,APIs
+Stripe,Backend Engineer,Fresher,Explain common API security vulnerabilities.,Medium,APIs
+Stripe,Frontend Engineer,Junior,Difference between SQL and NoSQL databases.,Medium,Databases
+Stripe,Data Engineer,Mid-Level,Explain database indexing and its impact on performance.,Medium,Databases
+Stripe,Software Engineer,Senior,What are ACID properties?,Medium,Databases
+Stripe,Backend Engineer,Staff,Explain normalization and denormalization.,Medium,Databases
+Stripe,Frontend Engineer,Fresher,What is database sharding?,Medium,Databases
+Stripe,Data Engineer,Junior,Explain replication and failover mechanisms.,Medium,Databases
+Stripe,Software Engineer,Mid-Level,Design a scalable URL shortening service.,Medium,System Design
+Stripe,Backend Engineer,Senior,Explain load balancing strategies.,Easy,System Design
+Stripe,Frontend Engineer,Staff,How would you design a notification system?,Medium,System Design
+Stripe,Data Engineer,Fresher,Explain horizontal vs vertical scaling.,Easy,System Design
+Stripe,Software Engineer,Junior,Design a basic caching strategy.,Medium,System Design
+Stripe,Backend Engineer,Mid-Level,Explain trade-offs in distributed system design.,Medium,System Design
+Stripe,Frontend Engineer,Senior,Explain process vs thread.,Easy,Operating Systems
+Stripe,Data Engineer,Staff,What is context switching?,Medium,Operating Systems
+Stripe,Software Engineer,Fresher,Explain virtual memory.,Easy,Operating Systems
+Stripe,Backend Engineer,Junior,What is a deadlock and how is it prevented?,Medium,Operating Systems
+Stripe,Frontend Engineer,Mid-Level,Explain scheduling algorithms.,Easy,Operating Systems
+Stripe,Data Engineer,Senior,Difference between user mode and kernel mode.,Medium,Operating Systems
+Stripe,Software Engineer,Staff,Explain how DNS works.,Easy,Networking
+Stripe,Backend Engineer,Fresher,Difference between TCP and UDP.,Medium,Networking
+Stripe,Frontend Engineer,Junior,What happens when you type a URL in a browser?,Medium,Networking
+Stripe,Data Engineer,Mid-Level,Explain HTTP vs HTTPS.,Easy,Networking
+Stripe,Software Engineer,Senior,What is a reverse proxy?,Medium,Networking
+Stripe,Backend Engineer,Staff,Explain latency vs bandwidth.,Easy,Networking
+Stripe,Frontend Engineer,Fresher,"Explain IaaS, PaaS, and SaaS.",Easy,Cloud Computing
+Stripe,Data Engineer,Junior,What is auto-scaling?,Medium,Cloud Computing
+Stripe,Software Engineer,Mid-Level,Explain cloud load balancing.,Easy,Cloud Computing
+Stripe,Backend Engineer,Senior,What is serverless computing?,Medium,Cloud Computing
+Stripe,Frontend Engineer,Staff,Explain multi-region deployment.,Easy,Cloud Computing
+Stripe,Data Engineer,Fresher,How does cloud monitoring work?,Medium,Cloud Computing
+Stripe,Software Engineer,Junior,Explain authentication vs authorization.,Medium,Security
+Stripe,Backend Engineer,Mid-Level,What is OAuth 2.0?,Medium,Security
+Stripe,Frontend Engineer,Senior,Explain common web security attacks.,Easy,Security
+Stripe,Data Engineer,Staff,What is encryption at rest and in transit?,Medium,Security
+Stripe,Software Engineer,Fresher,Explain role-based access control.,Easy,Security
+Stripe,Backend Engineer,Junior,What is zero-trust security?,Medium,Security
+Stripe,Frontend Engineer,Mid-Level,Explain CI/CD pipelines.,Easy,DevOps
+Stripe,Data Engineer,Senior,What is Docker used for?,Medium,DevOps
+Stripe,Software Engineer,Staff,Explain container orchestration.,Easy,DevOps
+Stripe,Backend Engineer,Fresher,Difference between blue-green and canary deployments.,Medium,DevOps
+Stripe,Frontend Engineer,Junior,What is infrastructure as code?,Medium,DevOps
+Stripe,Data Engineer,Mid-Level,Explain monitoring and logging.,Easy,DevOps
+Stripe,Software Engineer,Senior,Explain time and space complexity.,Easy,Data Structures & Algorithms
+Stripe,Backend Engineer,Staff,Difference between array and linked list.,Medium,Data Structures & Algorithms
+Stripe,Frontend Engineer,Fresher,Explain hashing and hash collisions.,Easy,Data Structures & Algorithms
+Stripe,Data Engineer,Junior,What is a balanced binary tree?,Medium,Data Structures & Algorithms
+Stripe,Software Engineer,Mid-Level,Explain BFS vs DFS.,Easy,Data Structures & Algorithms
+Stripe,Backend Engineer,Senior,What is dynamic programming?,Medium,Data Structures & Algorithms
+Stripe,Frontend Engineer,Staff,Explain object-oriented programming principles.,Medium,Behavioral / Fundamentals
+Stripe,Data Engineer,Fresher,What is SOLID design?,Medium,Behavioral / Fundamentals
+Stripe,Software Engineer,Junior,Explain MVC architecture.,Easy,Behavioral / Fundamentals
+Stripe,Backend Engineer,Mid-Level,Difference between abstraction and encapsulation.,Medium,Behavioral / Fundamentals
+Stripe,Frontend Engineer,Senior,Explain dependency injection.,Easy,Behavioral / Fundamentals
+Stripe,Data Engineer,Staff,What is clean code?,Medium,Behavioral / Fundamentals

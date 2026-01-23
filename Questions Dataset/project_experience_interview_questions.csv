@@ -1,0 +1,21 @@
+Company,Role,Question,Difficulty,Topic
+Common,All Technical Roles,Explain one of the most important projects you worked on,Easy-Medium,Project Overview
+Common,All Technical Roles,What was your role in the project?,Easy,Ownership
+Common,All Technical Roles,What problem was the project trying to solve?,Medium,Problem Solving
+Common,All Technical Roles,What technologies did you use and why?,Medium,Technical Decisions
+Common,All Technical Roles,What was the most challenging part of the project?,Medium,Challenges
+Common,All Technical Roles,How did you design the system architecture?,Hard,System Design
+Common,All Technical Roles,How did you ensure scalability or performance?,Hard,Scalability
+Common,All Technical Roles,What trade-offs did you make during development?,Medium-Hard,Decision Making
+Common,All Technical Roles,How did you handle bugs or production issues?,Medium,Debugging
+Common,All Technical Roles,How did you collaborate with other team members?,Easy-Medium,Teamwork
+Common,All Technical Roles,What would you improve if you had more time?,Medium,Reflection
+Common,All Technical Roles,How did you test your project?,Medium,Testing
+Common,All Technical Roles,Explain a technical decision you strongly defended,Hard,Technical Judgment
+Common,All Technical Roles,How did you handle changing requirements?,Medium,Adaptability
+Common,All Technical Roles,What did you learn from this project?,Easy-Medium,Learning
+Common,All Technical Roles,How did you deploy the project?,Medium,Deployment
+Common,All Technical Roles,Describe a project that failed,Hard,Failure Analysis
+Common,All Technical Roles,How did you measure success for the project?,Medium,Metrics
+Common,All Technical Roles,How did this project impact users or the business?,Medium,Impact
+Common,All Technical Roles,Which project best represents your skills and why?,Easy-Medium,Self Assessment

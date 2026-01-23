@@ -1,0 +1,61 @@
+Company,Role,Experience,Question,Difficulty,Topic
+SAP,Software Engineer,Fresher,Explain REST principles and common HTTP methods.,Medium,APIs
+SAP,Backend Engineer,Junior,What makes an API idempotent and why is it important?,Medium,APIs
+SAP,Frontend Engineer,Mid-Level,Explain pagination and versioning strategies in APIs.,Medium,APIs
+SAP,Data Engineer,Senior,Difference between REST and GraphQL.,Medium,APIs
+SAP,Software Engineer,Staff,How do APIs handle authentication and authorization?,Medium,APIs
+SAP,Backend Engineer,Fresher,Explain common API security vulnerabilities.,Medium,APIs
+SAP,Frontend Engineer,Junior,Difference between SQL and NoSQL databases.,Medium,Databases
+SAP,Data Engineer,Mid-Level,Explain database indexing and its impact on performance.,Medium,Databases
+SAP,Software Engineer,Senior,What are ACID properties?,Medium,Databases
+SAP,Backend Engineer,Staff,Explain normalization and denormalization.,Medium,Databases
+SAP,Frontend Engineer,Fresher,What is database sharding?,Medium,Databases
+SAP,Data Engineer,Junior,Explain replication and failover mechanisms.,Medium,Databases
+SAP,Software Engineer,Mid-Level,Design a scalable URL shortening service.,Medium,System Design
+SAP,Backend Engineer,Senior,Explain load balancing strategies.,Easy,System Design
+SAP,Frontend Engineer,Staff,How would you design a notification system?,Medium,System Design
+SAP,Data Engineer,Fresher,Explain horizontal vs vertical scaling.,Easy,System Design
+SAP,Software Engineer,Junior,Design a basic caching strategy.,Medium,System Design
+SAP,Backend Engineer,Mid-Level,Explain trade-offs in distributed system design.,Medium,System Design
+SAP,Frontend Engineer,Senior,Explain process vs thread.,Easy,Operating Systems
+SAP,Data Engineer,Staff,What is context switching?,Medium,Operating Systems
+SAP,Software Engineer,Fresher,Explain virtual memory.,Easy,Operating Systems
+SAP,Backend Engineer,Junior,What is a deadlock and how is it prevented?,Medium,Operating Systems
+SAP,Frontend Engineer,Mid-Level,Explain scheduling algorithms.,Easy,Operating Systems
+SAP,Data Engineer,Senior,Difference between user mode and kernel mode.,Medium,Operating Systems
+SAP,Software Engineer,Staff,Explain how DNS works.,Easy,Networking
+SAP,Backend Engineer,Fresher,Difference between TCP and UDP.,Medium,Networking
+SAP,Frontend Engineer,Junior,What happens when you type a URL in a browser?,Medium,Networking
+SAP,Data Engineer,Mid-Level,Explain HTTP vs HTTPS.,Easy,Networking
+SAP,Software Engineer,Senior,What is a reverse proxy?,Medium,Networking
+SAP,Backend Engineer,Staff,Explain latency vs bandwidth.,Easy,Networking
+SAP,Frontend Engineer,Fresher,"Explain IaaS, PaaS, and SaaS.",Easy,Cloud Computing
+SAP,Data Engineer,Junior,What is auto-scaling?,Medium,Cloud Computing
+SAP,Software Engineer,Mid-Level,Explain cloud load balancing.,Easy,Cloud Computing
+SAP,Backend Engineer,Senior,What is serverless computing?,Medium,Cloud Computing
+SAP,Frontend Engineer,Staff,Explain multi-region deployment.,Easy,Cloud Computing
+SAP,Data Engineer,Fresher,How does cloud monitoring work?,Medium,Cloud Computing
+SAP,Software Engineer,Junior,Explain authentication vs authorization.,Medium,Security
+SAP,Backend Engineer,Mid-Level,What is OAuth 2.0?,Medium,Security
+SAP,Frontend Engineer,Senior,Explain common web security attacks.,Easy,Security
+SAP,Data Engineer,Staff,What is encryption at rest and in transit?,Medium,Security
+SAP,Software Engineer,Fresher,Explain role-based access control.,Easy,Security
+SAP,Backend Engineer,Junior,What is zero-trust security?,Medium,Security
+SAP,Frontend Engineer,Mid-Level,Explain CI/CD pipelines.,Easy,DevOps
+SAP,Data Engineer,Senior,What is Docker used for?,Medium,DevOps
+SAP,Software Engineer,Staff,Explain container orchestration.,Easy,DevOps
+SAP,Backend Engineer,Fresher,Difference between blue-green and canary deployments.,Medium,DevOps
+SAP,Frontend Engineer,Junior,What is infrastructure as code?,Medium,DevOps
+SAP,Data Engineer,Mid-Level,Explain monitoring and logging.,Easy,DevOps
+SAP,Software Engineer,Senior,Explain time and space complexity.,Easy,Data Structures & Algorithms
+SAP,Backend Engineer,Staff,Difference between array and linked list.,Medium,Data Structures & Algorithms
+SAP,Frontend Engineer,Fresher,Explain hashing and hash collisions.,Easy,Data Structures & Algorithms
+SAP,Data Engineer,Junior,What is a balanced binary tree?,Medium,Data Structures & Algorithms
+SAP,Software Engineer,Mid-Level,Explain BFS vs DFS.,Easy,Data Structures & Algorithms
+SAP,Backend Engineer,Senior,What is dynamic programming?,Medium,Data Structures & Algorithms
+SAP,Frontend Engineer,Staff,Explain object-oriented programming principles.,Medium,Behavioral / Fundamentals
+SAP,Data Engineer,Fresher,What is SOLID design?,Medium,Behavioral / Fundamentals
+SAP,Software Engineer,Junior,Explain MVC architecture.,Easy,Behavioral / Fundamentals
+SAP,Backend Engineer,Mid-Level,Difference between abstraction and encapsulation.,Medium,Behavioral / Fundamentals
+SAP,Frontend Engineer,Senior,Explain dependency injection.,Easy,Behavioral / Fundamentals
+SAP,Data Engineer,Staff,What is clean code?,Medium,Behavioral / Fundamentals

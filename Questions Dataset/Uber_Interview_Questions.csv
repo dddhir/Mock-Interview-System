@@ -1,0 +1,61 @@
+Company,Role,Experience,Question,Difficulty,Topic
+Uber,Software Engineer,Fresher,Explain REST principles and common HTTP methods.,Medium,APIs
+Uber,Backend Engineer,Junior,What makes an API idempotent and why is it important?,Medium,APIs
+Uber,Frontend Engineer,Mid-Level,Explain pagination and versioning strategies in APIs.,Medium,APIs
+Uber,Data Engineer,Senior,Difference between REST and GraphQL.,Medium,APIs
+Uber,Software Engineer,Staff,How do APIs handle authentication and authorization?,Medium,APIs
+Uber,Backend Engineer,Fresher,Explain common API security vulnerabilities.,Medium,APIs
+Uber,Frontend Engineer,Junior,Difference between SQL and NoSQL databases.,Medium,Databases
+Uber,Data Engineer,Mid-Level,Explain database indexing and its impact on performance.,Medium,Databases
+Uber,Software Engineer,Senior,What are ACID properties?,Medium,Databases
+Uber,Backend Engineer,Staff,Explain normalization and denormalization.,Medium,Databases
+Uber,Frontend Engineer,Fresher,What is database sharding?,Medium,Databases
+Uber,Data Engineer,Junior,Explain replication and failover mechanisms.,Medium,Databases
+Uber,Software Engineer,Mid-Level,Design a scalable URL shortening service.,Medium,System Design
+Uber,Backend Engineer,Senior,Explain load balancing strategies.,Easy,System Design
+Uber,Frontend Engineer,Staff,How would you design a notification system?,Medium,System Design
+Uber,Data Engineer,Fresher,Explain horizontal vs vertical scaling.,Easy,System Design
+Uber,Software Engineer,Junior,Design a basic caching strategy.,Medium,System Design
+Uber,Backend Engineer,Mid-Level,Explain trade-offs in distributed system design.,Medium,System Design
+Uber,Frontend Engineer,Senior,Explain process vs thread.,Easy,Operating Systems
+Uber,Data Engineer,Staff,What is context switching?,Medium,Operating Systems
+Uber,Software Engineer,Fresher,Explain virtual memory.,Easy,Operating Systems
+Uber,Backend Engineer,Junior,What is a deadlock and how is it prevented?,Medium,Operating Systems
+Uber,Frontend Engineer,Mid-Level,Explain scheduling algorithms.,Easy,Operating Systems
+Uber,Data Engineer,Senior,Difference between user mode and kernel mode.,Medium,Operating Systems
+Uber,Software Engineer,Staff,Explain how DNS works.,Easy,Networking
+Uber,Backend Engineer,Fresher,Difference between TCP and UDP.,Medium,Networking
+Uber,Frontend Engineer,Junior,What happens when you type a URL in a browser?,Medium,Networking
+Uber,Data Engineer,Mid-Level,Explain HTTP vs HTTPS.,Easy,Networking
+Uber,Software Engineer,Senior,What is a reverse proxy?,Medium,Networking
+Uber,Backend Engineer,Staff,Explain latency vs bandwidth.,Easy,Networking
+Uber,Frontend Engineer,Fresher,"Explain IaaS, PaaS, and SaaS.",Easy,Cloud Computing
+Uber,Data Engineer,Junior,What is auto-scaling?,Medium,Cloud Computing
+Uber,Software Engineer,Mid-Level,Explain cloud load balancing.,Easy,Cloud Computing
+Uber,Backend Engineer,Senior,What is serverless computing?,Medium,Cloud Computing
+Uber,Frontend Engineer,Staff,Explain multi-region deployment.,Easy,Cloud Computing
+Uber,Data Engineer,Fresher,How does cloud monitoring work?,Medium,Cloud Computing
+Uber,Software Engineer,Junior,Explain authentication vs authorization.,Medium,Security
+Uber,Backend Engineer,Mid-Level,What is OAuth 2.0?,Medium,Security
+Uber,Frontend Engineer,Senior,Explain common web security attacks.,Easy,Security
+Uber,Data Engineer,Staff,What is encryption at rest and in transit?,Medium,Security
+Uber,Software Engineer,Fresher,Explain role-based access control.,Easy,Security
+Uber,Backend Engineer,Junior,What is zero-trust security?,Medium,Security
+Uber,Frontend Engineer,Mid-Level,Explain CI/CD pipelines.,Easy,DevOps
+Uber,Data Engineer,Senior,What is Docker used for?,Medium,DevOps
+Uber,Software Engineer,Staff,Explain container orchestration.,Easy,DevOps
+Uber,Backend Engineer,Fresher,Difference between blue-green and canary deployments.,Medium,DevOps
+Uber,Frontend Engineer,Junior,What is infrastructure as code?,Medium,DevOps
+Uber,Data Engineer,Mid-Level,Explain monitoring and logging.,Easy,DevOps
+Uber,Software Engineer,Senior,Explain time and space complexity.,Easy,Data Structures & Algorithms
+Uber,Backend Engineer,Staff,Difference between array and linked list.,Medium,Data Structures & Algorithms
+Uber,Frontend Engineer,Fresher,Explain hashing and hash collisions.,Easy,Data Structures & Algorithms
+Uber,Data Engineer,Junior,What is a balanced binary tree?,Medium,Data Structures & Algorithms
+Uber,Software Engineer,Mid-Level,Explain BFS vs DFS.,Easy,Data Structures & Algorithms
+Uber,Backend Engineer,Senior,What is dynamic programming?,Medium,Data Structures & Algorithms
+Uber,Frontend Engineer,Staff,Explain object-oriented programming principles.,Medium,Behavioral / Fundamentals
+Uber,Data Engineer,Fresher,What is SOLID design?,Medium,Behavioral / Fundamentals
+Uber,Software Engineer,Junior,Explain MVC architecture.,Easy,Behavioral / Fundamentals
+Uber,Backend Engineer,Mid-Level,Difference between abstraction and encapsulation.,Medium,Behavioral / Fundamentals
+Uber,Frontend Engineer,Senior,Explain dependency injection.,Easy,Behavioral / Fundamentals
+Uber,Data Engineer,Staff,What is clean code?,Medium,Behavioral / Fundamentals

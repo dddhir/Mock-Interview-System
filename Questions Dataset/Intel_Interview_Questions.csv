@@ -1,0 +1,61 @@
+Company,Role,Experience,Question,Difficulty,Topic
+Intel,Software Engineer,Fresher,Explain REST principles and common HTTP methods.,Medium,APIs
+Intel,Backend Engineer,Junior,What makes an API idempotent and why is it important?,Medium,APIs
+Intel,Frontend Engineer,Mid-Level,Explain pagination and versioning strategies in APIs.,Medium,APIs
+Intel,Data Engineer,Senior,Difference between REST and GraphQL.,Medium,APIs
+Intel,Software Engineer,Staff,How do APIs handle authentication and authorization?,Medium,APIs
+Intel,Backend Engineer,Fresher,Explain common API security vulnerabilities.,Medium,APIs
+Intel,Frontend Engineer,Junior,Difference between SQL and NoSQL databases.,Medium,Databases
+Intel,Data Engineer,Mid-Level,Explain database indexing and its impact on performance.,Medium,Databases
+Intel,Software Engineer,Senior,What are ACID properties?,Medium,Databases
+Intel,Backend Engineer,Staff,Explain normalization and denormalization.,Medium,Databases
+Intel,Frontend Engineer,Fresher,What is database sharding?,Medium,Databases
+Intel,Data Engineer,Junior,Explain replication and failover mechanisms.,Medium,Databases
+Intel,Software Engineer,Mid-Level,Design a scalable URL shortening service.,Medium,System Design
+Intel,Backend Engineer,Senior,Explain load balancing strategies.,Easy,System Design
+Intel,Frontend Engineer,Staff,How would you design a notification system?,Medium,System Design
+Intel,Data Engineer,Fresher,Explain horizontal vs vertical scaling.,Easy,System Design
+Intel,Software Engineer,Junior,Design a basic caching strategy.,Medium,System Design
+Intel,Backend Engineer,Mid-Level,Explain trade-offs in distributed system design.,Medium,System Design
+Intel,Frontend Engineer,Senior,Explain process vs thread.,Easy,Operating Systems
+Intel,Data Engineer,Staff,What is context switching?,Medium,Operating Systems
+Intel,Software Engineer,Fresher,Explain virtual memory.,Easy,Operating Systems
+Intel,Backend Engineer,Junior,What is a deadlock and how is it prevented?,Medium,Operating Systems
+Intel,Frontend Engineer,Mid-Level,Explain scheduling algorithms.,Easy,Operating Systems
+Intel,Data Engineer,Senior,Difference between user mode and kernel mode.,Medium,Operating Systems
+Intel,Software Engineer,Staff,Explain how DNS works.,Easy,Networking
+Intel,Backend Engineer,Fresher,Difference between TCP and UDP.,Medium,Networking
+Intel,Frontend Engineer,Junior,What happens when you type a URL in a browser?,Medium,Networking
+Intel,Data Engineer,Mid-Level,Explain HTTP vs HTTPS.,Easy,Networking
+Intel,Software Engineer,Senior,What is a reverse proxy?,Medium,Networking
+Intel,Backend Engineer,Staff,Explain latency vs bandwidth.,Easy,Networking
+Intel,Frontend Engineer,Fresher,"Explain IaaS, PaaS, and SaaS.",Easy,Cloud Computing
+Intel,Data Engineer,Junior,What is auto-scaling?,Medium,Cloud Computing
+Intel,Software Engineer,Mid-Level,Explain cloud load balancing.,Easy,Cloud Computing
+Intel,Backend Engineer,Senior,What is serverless computing?,Medium,Cloud Computing
+Intel,Frontend Engineer,Staff,Explain multi-region deployment.,Easy,Cloud Computing
+Intel,Data Engineer,Fresher,How does cloud monitoring work?,Medium,Cloud Computing
+Intel,Software Engineer,Junior,Explain authentication vs authorization.,Medium,Security
+Intel,Backend Engineer,Mid-Level,What is OAuth 2.0?,Medium,Security
+Intel,Frontend Engineer,Senior,Explain common web security attacks.,Easy,Security
+Intel,Data Engineer,Staff,What is encryption at rest and in transit?,Medium,Security
+Intel,Software Engineer,Fresher,Explain role-based access control.,Easy,Security
+Intel,Backend Engineer,Junior,What is zero-trust security?,Medium,Security
+Intel,Frontend Engineer,Mid-Level,Explain CI/CD pipelines.,Easy,DevOps
+Intel,Data Engineer,Senior,What is Docker used for?,Medium,DevOps
+Intel,Software Engineer,Staff,Explain container orchestration.,Easy,DevOps
+Intel,Backend Engineer,Fresher,Difference between blue-green and canary deployments.,Medium,DevOps
+Intel,Frontend Engineer,Junior,What is infrastructure as code?,Medium,DevOps
+Intel,Data Engineer,Mid-Level,Explain monitoring and logging.,Easy,DevOps
+Intel,Software Engineer,Senior,Explain time and space complexity.,Easy,Data Structures & Algorithms
+Intel,Backend Engineer,Staff,Difference between array and linked list.,Medium,Data Structures & Algorithms
+Intel,Frontend Engineer,Fresher,Explain hashing and hash collisions.,Easy,Data Structures & Algorithms
+Intel,Data Engineer,Junior,What is a balanced binary tree?,Medium,Data Structures & Algorithms
+Intel,Software Engineer,Mid-Level,Explain BFS vs DFS.,Easy,Data Structures & Algorithms
+Intel,Backend Engineer,Senior,What is dynamic programming?,Medium,Data Structures & Algorithms
+Intel,Frontend Engineer,Staff,Explain object-oriented programming principles.,Medium,Behavioral / Fundamentals
+Intel,Data Engineer,Fresher,What is SOLID design?,Medium,Behavioral / Fundamentals
+Intel,Software Engineer,Junior,Explain MVC architecture.,Easy,Behavioral / Fundamentals
+Intel,Backend Engineer,Mid-Level,Difference between abstraction and encapsulation.,Medium,Behavioral / Fundamentals
+Intel,Frontend Engineer,Senior,Explain dependency injection.,Easy,Behavioral / Fundamentals
+Intel,Data Engineer,Staff,What is clean code?,Medium,Behavioral / Fundamentals

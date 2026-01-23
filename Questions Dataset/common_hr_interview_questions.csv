@@ -1,0 +1,21 @@
+Company,Role,Question,Difficulty,Topic
+Common,All Roles,Tell me about yourself,Easy,Introduction
+Common,All Roles,Why do you want to work for this company?,Medium,Motivation
+Common,All Roles,What are your strengths?,Easy,Self Assessment
+Common,All Roles,What are your weaknesses?,Medium,Self Assessment
+Common,All Roles,Where do you see yourself in 5 years?,Medium,Career Goals
+Common,All Roles,Why should we hire you?,Medium,Value Proposition
+Common,All Roles,Tell me about a time you faced a challenge at work,Medium,Behavioral
+Common,All Roles,How do you handle conflict in a team?,Medium,Teamwork
+Common,All Roles,Describe a failure and what you learned from it,Medium,Behavioral
+Common,All Roles,How do you handle pressure and deadlines?,Medium,Stress Management
+Common,All Roles,What motivates you at work?,Easy-Medium,Motivation
+Common,All Roles,Tell me about a time you showed leadership,Medium,Leadership
+Common,All Roles,How do you prioritize tasks?,Easy-Medium,Time Management
+Common,All Roles,Why are you leaving your current job?,Medium,Career Change
+Common,All Roles,Describe your ideal work environment,Easy,Culture Fit
+Common,All Roles,How do you handle feedback and criticism?,Medium,Professionalism
+Common,All Roles,Tell me about a time you disagreed with your manager,Hard,Conflict Resolution
+Common,All Roles,What are your salary expectations?,Medium,Compensation
+Common,All Roles,What do you know about our company?,Easy-Medium,Company Research
+Common,All Roles,Do you have any questions for us?,Easy,Closing

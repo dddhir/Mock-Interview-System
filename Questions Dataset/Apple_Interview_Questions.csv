@@ -1,0 +1,61 @@
+Company,Role,Experience,Question,Difficulty,Topic
+Apple,Software Engineer,Fresher,Explain REST principles and common HTTP methods.,Medium,APIs
+Apple,Backend Engineer,Junior,What makes an API idempotent and why is it important?,Medium,APIs
+Apple,Frontend Engineer,Mid-Level,Explain pagination and versioning strategies in APIs.,Medium,APIs
+Apple,Data Engineer,Senior,Difference between REST and GraphQL.,Medium,APIs
+Apple,Software Engineer,Staff,How do APIs handle authentication and authorization?,Medium,APIs
+Apple,Backend Engineer,Fresher,Explain common API security vulnerabilities.,Medium,APIs
+Apple,Frontend Engineer,Junior,Difference between SQL and NoSQL databases.,Medium,Databases
+Apple,Data Engineer,Mid-Level,Explain database indexing and its impact on performance.,Medium,Databases
+Apple,Software Engineer,Senior,What are ACID properties?,Medium,Databases
+Apple,Backend Engineer,Staff,Explain normalization and denormalization.,Medium,Databases
+Apple,Frontend Engineer,Fresher,What is database sharding?,Medium,Databases
+Apple,Data Engineer,Junior,Explain replication and failover mechanisms.,Medium,Databases
+Apple,Software Engineer,Mid-Level,Design a scalable URL shortening service.,Medium,System Design
+Apple,Backend Engineer,Senior,Explain load balancing strategies.,Easy,System Design
+Apple,Frontend Engineer,Staff,How would you design a notification system?,Medium,System Design
+Apple,Data Engineer,Fresher,Explain horizontal vs vertical scaling.,Easy,System Design
+Apple,Software Engineer,Junior,Design a basic caching strategy.,Medium,System Design
+Apple,Backend Engineer,Mid-Level,Explain trade-offs in distributed system design.,Medium,System Design
+Apple,Frontend Engineer,Senior,Explain process vs thread.,Easy,Operating Systems
+Apple,Data Engineer,Staff,What is context switching?,Medium,Operating Systems
+Apple,Software Engineer,Fresher,Explain virtual memory.,Easy,Operating Systems
+Apple,Backend Engineer,Junior,What is a deadlock and how is it prevented?,Medium,Operating Systems
+Apple,Frontend Engineer,Mid-Level,Explain scheduling algorithms.,Easy,Operating Systems
+Apple,Data Engineer,Senior,Difference between user mode and kernel mode.,Medium,Operating Systems
+Apple,Software Engineer,Staff,Explain how DNS works.,Easy,Networking
+Apple,Backend Engineer,Fresher,Difference between TCP and UDP.,Medium,Networking
+Apple,Frontend Engineer,Junior,What happens when you type a URL in a browser?,Medium,Networking
+Apple,Data Engineer,Mid-Level,Explain HTTP vs HTTPS.,Easy,Networking
+Apple,Software Engineer,Senior,What is a reverse proxy?,Medium,Networking
+Apple,Backend Engineer,Staff,Explain latency vs bandwidth.,Easy,Networking
+Apple,Frontend Engineer,Fresher,"Explain IaaS, PaaS, and SaaS.",Easy,Cloud Computing
+Apple,Data Engineer,Junior,What is auto-scaling?,Medium,Cloud Computing
+Apple,Software Engineer,Mid-Level,Explain cloud load balancing.,Easy,Cloud Computing
+Apple,Backend Engineer,Senior,What is serverless computing?,Medium,Cloud Computing
+Apple,Frontend Engineer,Staff,Explain multi-region deployment.,Easy,Cloud Computing
+Apple,Data Engineer,Fresher,How does cloud monitoring work?,Medium,Cloud Computing
+Apple,Software Engineer,Junior,Explain authentication vs authorization.,Medium,Security
+Apple,Backend Engineer,Mid-Level,What is OAuth 2.0?,Medium,Security
+Apple,Frontend Engineer,Senior,Explain common web security attacks.,Easy,Security
+Apple,Data Engineer,Staff,What is encryption at rest and in transit?,Medium,Security
+Apple,Software Engineer,Fresher,Explain role-based access control.,Easy,Security
+Apple,Backend Engineer,Junior,What is zero-trust security?,Medium,Security
+Apple,Frontend Engineer,Mid-Level,Explain CI/CD pipelines.,Easy,DevOps
+Apple,Data Engineer,Senior,What is Docker used for?,Medium,DevOps
+Apple,Software Engineer,Staff,Explain container orchestration.,Easy,DevOps
+Apple,Backend Engineer,Fresher,Difference between blue-green and canary deployments.,Medium,DevOps
+Apple,Frontend Engineer,Junior,What is infrastructure as code?,Medium,DevOps
+Apple,Data Engineer,Mid-Level,Explain monitoring and logging.,Easy,DevOps
+Apple,Software Engineer,Senior,Explain time and space complexity.,Easy,Data Structures & Algorithms
+Apple,Backend Engineer,Staff,Difference between array and linked list.,Medium,Data Structures & Algorithms
+Apple,Frontend Engineer,Fresher,Explain hashing and hash collisions.,Easy,Data Structures & Algorithms
+Apple,Data Engineer,Junior,What is a balanced binary tree?,Medium,Data Structures & Algorithms
+Apple,Software Engineer,Mid-Level,Explain BFS vs DFS.,Easy,Data Structures & Algorithms
+Apple,Backend Engineer,Senior,What is dynamic programming?,Medium,Data Structures & Algorithms
+Apple,Frontend Engineer,Staff,Explain object-oriented programming principles.,Medium,Behavioral / Fundamentals
+Apple,Data Engineer,Fresher,What is SOLID design?,Medium,Behavioral / Fundamentals
+Apple,Software Engineer,Junior,Explain MVC architecture.,Easy,Behavioral / Fundamentals
+Apple,Backend Engineer,Mid-Level,Difference between abstraction and encapsulation.,Medium,Behavioral / Fundamentals
+Apple,Frontend Engineer,Senior,Explain dependency injection.,Easy,Behavioral / Fundamentals
+Apple,Data Engineer,Staff,What is clean code?,Medium,Behavioral / Fundamentals

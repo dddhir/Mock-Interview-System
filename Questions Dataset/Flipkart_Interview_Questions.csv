@@ -1,0 +1,61 @@
+Company,Role,Experience,Question,Difficulty,Topic
+Flipkart,Software Engineer,Fresher,Explain REST principles and common HTTP methods used in e-commerce APIs.,Medium,APIs
+Flipkart,Backend Engineer,Junior,What makes an API idempotent and why is it critical for payment systems?,Medium,APIs
+Flipkart,Frontend Engineer,Mid-Level,How would you implement pagination and API versioning for a product catalog?,Medium,APIs
+Flipkart,Data Engineer,Senior,Compare REST and GraphQL for building scalable e-commerce APIs.,Medium,APIs
+Flipkart,Software Engineer,Staff,How do you implement secure authentication and authorization in microservices?,Hard,APIs
+Flipkart,Backend Engineer,Fresher,Explain common API security vulnerabilities and mitigation strategies.,Medium,APIs
+Flipkart,Frontend Engineer,Junior,Compare SQL and NoSQL databases for e-commerce product catalogs.,Medium,Databases
+Flipkart,Data Engineer,Mid-Level,Explain database indexing strategies for high-traffic e-commerce queries.,Medium,Databases
+Flipkart,Software Engineer,Senior,How do ACID properties ensure data consistency in payment transactions?,Medium,Databases
+Flipkart,Backend Engineer,Staff,When would you choose denormalization over normalization in e-commerce systems?,Hard,Databases
+Flipkart,Frontend Engineer,Fresher,Explain database sharding strategies for scaling user data.,Medium,Databases
+Flipkart,Data Engineer,Junior,How do you implement database replication and failover for high availability?,Medium,Databases
+Flipkart,Software Engineer,Mid-Level,Design a scalable URL shortening service like bit.ly with analytics.,Hard,System Design
+Flipkart,Backend Engineer,Senior,Explain load balancing strategies for handling flash sales traffic.,Medium,System Design
+Flipkart,Frontend Engineer,Staff,How would you design a real-time notification system for order updates?,Hard,System Design
+Flipkart,Data Engineer,Fresher,Compare horizontal vs vertical scaling for e-commerce platforms.,Easy,System Design
+Flipkart,Software Engineer,Junior,Design a multi-level caching strategy for product recommendations.,Medium,System Design
+Flipkart,Backend Engineer,Mid-Level,Explain CAP theorem trade-offs in distributed e-commerce systems.,Hard,System Design
+Flipkart,Frontend Engineer,Senior,Explain the difference between processes and threads in web applications.,Easy,Operating Systems
+Flipkart,Data Engineer,Staff,How does context switching affect application performance?,Medium,Operating Systems
+Flipkart,Software Engineer,Fresher,Explain virtual memory management and its benefits.,Easy,Operating Systems
+Flipkart,Backend Engineer,Junior,What causes deadlocks and how do you prevent them in concurrent systems?,Medium,Operating Systems
+Flipkart,Frontend Engineer,Mid-Level,Compare different CPU scheduling algorithms and their use cases.,Medium,Operating Systems
+Flipkart,Data Engineer,Senior,Explain the difference between user mode and kernel mode execution.,Medium,Operating Systems
+Flipkart,Software Engineer,Staff,Explain DNS resolution process and how CDNs optimize it.,Medium,Networking
+Flipkart,Backend Engineer,Fresher,When would you choose TCP over UDP for e-commerce applications?,Medium,Networking
+Flipkart,Frontend Engineer,Junior,Trace the complete journey from typing a URL to page rendering.,Medium,Networking
+Flipkart,Data Engineer,Mid-Level,Explain HTTPS handshake process and certificate validation.,Medium,Networking
+Flipkart,Software Engineer,Senior,How do reverse proxies improve application performance and security?,Medium,Networking
+Flipkart,Backend Engineer,Staff,Explain the relationship between latency and bandwidth in system performance.,Medium,Networking
+Flipkart,Frontend Engineer,Fresher,Compare IaaS vs PaaS vs SaaS with real-world examples.,Easy,Cloud Computing
+Flipkart,Data Engineer,Junior,How does auto-scaling work in cloud environments during traffic spikes?,Medium,Cloud Computing
+Flipkart,Software Engineer,Mid-Level,Explain cloud load balancing strategies for global e-commerce platforms.,Medium,Cloud Computing
+Flipkart,Backend Engineer,Senior,What are the benefits and challenges of serverless computing?,Medium,Cloud Computing
+Flipkart,Frontend Engineer,Staff,How do you implement multi-region deployment for disaster recovery?,Hard,Cloud Computing
+Flipkart,Data Engineer,Fresher,Explain cloud monitoring and alerting strategies for production systems.,Medium,Cloud Computing
+Flipkart,Software Engineer,Junior,Explain the difference between authentication and authorization with examples.,Easy,Security
+Flipkart,Backend Engineer,Mid-Level,How does OAuth 2.0 flow work for third-party integrations?,Medium,Security
+Flipkart,Frontend Engineer,Senior,Explain common web security attacks (XSS CSRF SQL injection) and prevention.,Medium,Security
+Flipkart,Data Engineer,Staff,How do you implement encryption at rest and in transit for sensitive data?,Hard,Security
+Flipkart,Software Engineer,Fresher,Explain role-based access control (RBAC) implementation.,Easy,Security
+Flipkart,Backend Engineer,Junior,What is zero-trust security model and how is it implemented?,Medium,Security
+Flipkart,Frontend Engineer,Mid-Level,Explain CI/CD pipeline stages and best practices.,Medium,DevOps
+Flipkart,Data Engineer,Senior,How does Docker containerization improve deployment consistency?,Medium,DevOps
+Flipkart,Software Engineer,Staff,Compare Kubernetes vs Docker Swarm for container orchestration.,Hard,DevOps
+Flipkart,Backend Engineer,Fresher,Explain blue-green vs canary deployment strategies with pros and cons.,Medium,DevOps
+Flipkart,Frontend Engineer,Junior,What is Infrastructure as Code and how does it improve reliability?,Medium,DevOps
+Flipkart,Data Engineer,Mid-Level,How do you implement effective monitoring and logging for microservices?,Medium,DevOps
+Flipkart,Software Engineer,Senior,Analyze time and space complexity of common algorithms.,Medium,Data Structures & Algorithms
+Flipkart,Backend Engineer,Staff,Compare array vs linked list performance for different operations.,Medium,Data Structures & Algorithms
+Flipkart,Frontend Engineer,Fresher,Explain hash tables collision resolution techniques.,Medium,Data Structures & Algorithms
+Flipkart,Data Engineer,Junior,How do balanced binary trees maintain optimal search performance?,Medium,Data Structures & Algorithms
+Flipkart,Software Engineer,Mid-Level,When would you use BFS vs DFS for graph traversal problems?,Medium,Data Structures & Algorithms
+Flipkart,Backend Engineer,Senior,Explain dynamic programming with a real-world optimization example.,Hard,Data Structures & Algorithms
+Flipkart,Frontend Engineer,Staff,Explain OOP principles with practical software design examples.,Medium,Programming Fundamentals
+Flipkart,Data Engineer,Fresher,How do SOLID principles improve code maintainability?,Medium,Programming Fundamentals
+Flipkart,Software Engineer,Junior,Explain MVC architecture pattern and its benefits.,Easy,Programming Fundamentals
+Flipkart,Backend Engineer,Mid-Level,Compare abstraction vs encapsulation with code examples.,Medium,Programming Fundamentals
+Flipkart,Frontend Engineer,Senior,How does dependency injection improve testability and flexibility?,Medium,Programming Fundamentals
+Flipkart,Data Engineer,Staff,What constitutes clean code and how do you maintain it in large teams?,Medium,Programming Fundamentals

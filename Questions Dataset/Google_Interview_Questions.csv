@@ -1,0 +1,61 @@
+Company,Role,Experience,Question,Difficulty,Topic
+Google,Software Engineer,Fresher,Explain REST principles and common HTTP methods.,Medium,APIs
+Google,Backend Engineer,Junior,What makes an API idempotent and why is it important?,Medium,APIs
+Google,Frontend Engineer,Mid-Level,Explain pagination and versioning strategies in APIs.,Medium,APIs
+Google,Data Engineer,Senior,Difference between REST and GraphQL.,Medium,APIs
+Google,Software Engineer,Staff,How do APIs handle authentication and authorization?,Medium,APIs
+Google,Backend Engineer,Fresher,Explain common API security vulnerabilities.,Medium,APIs
+Google,Frontend Engineer,Junior,Difference between SQL and NoSQL databases.,Medium,Databases
+Google,Data Engineer,Mid-Level,Explain database indexing and its impact on performance.,Medium,Databases
+Google,Software Engineer,Senior,What are ACID properties?,Medium,Databases
+Google,Backend Engineer,Staff,Explain normalization and denormalization.,Medium,Databases
+Google,Frontend Engineer,Fresher,What is database sharding?,Medium,Databases
+Google,Data Engineer,Junior,Explain replication and failover mechanisms.,Medium,Databases
+Google,Software Engineer,Mid-Level,Design a scalable URL shortening service.,Medium,System Design
+Google,Backend Engineer,Senior,Explain load balancing strategies.,Easy,System Design
+Google,Frontend Engineer,Staff,How would you design a notification system?,Medium,System Design
+Google,Data Engineer,Fresher,Explain horizontal vs vertical scaling.,Easy,System Design
+Google,Software Engineer,Junior,Design a basic caching strategy.,Medium,System Design
+Google,Backend Engineer,Mid-Level,Explain trade-offs in distributed system design.,Medium,System Design
+Google,Frontend Engineer,Senior,Explain process vs thread.,Easy,Operating Systems
+Google,Data Engineer,Staff,What is context switching?,Medium,Operating Systems
+Google,Software Engineer,Fresher,Explain virtual memory.,Easy,Operating Systems
+Google,Backend Engineer,Junior,What is a deadlock and how is it prevented?,Medium,Operating Systems
+Google,Frontend Engineer,Mid-Level,Explain scheduling algorithms.,Easy,Operating Systems
+Google,Data Engineer,Senior,Difference between user mode and kernel mode.,Medium,Operating Systems
+Google,Software Engineer,Staff,Explain how DNS works.,Easy,Networking
+Google,Backend Engineer,Fresher,Difference between TCP and UDP.,Medium,Networking
+Google,Frontend Engineer,Junior,What happens when you type a URL in a browser?,Medium,Networking
+Google,Data Engineer,Mid-Level,Explain HTTP vs HTTPS.,Easy,Networking
+Google,Software Engineer,Senior,What is a reverse proxy?,Medium,Networking
+Google,Backend Engineer,Staff,Explain latency vs bandwidth.,Easy,Networking
+Google,Frontend Engineer,Fresher,"Explain IaaS, PaaS, and SaaS.",Easy,Cloud Computing
+Google,Data Engineer,Junior,What is auto-scaling?,Medium,Cloud Computing
+Google,Software Engineer,Mid-Level,Explain cloud load balancing.,Easy,Cloud Computing
+Google,Backend Engineer,Senior,What is serverless computing?,Medium,Cloud Computing
+Google,Frontend Engineer,Staff,Explain multi-region deployment.,Easy,Cloud Computing
+Google,Data Engineer,Fresher,How does cloud monitoring work?,Medium,Cloud Computing
+Google,Software Engineer,Junior,Explain authentication vs authorization.,Medium,Security
+Google,Backend Engineer,Mid-Level,What is OAuth 2.0?,Medium,Security
+Google,Frontend Engineer,Senior,Explain common web security attacks.,Easy,Security
+Google,Data Engineer,Staff,What is encryption at rest and in transit?,Medium,Security
+Google,Software Engineer,Fresher,Explain role-based access control.,Easy,Security
+Google,Backend Engineer,Junior,What is zero-trust security?,Medium,Security
+Google,Frontend Engineer,Mid-Level,Explain CI/CD pipelines.,Easy,DevOps
+Google,Data Engineer,Senior,What is Docker used for?,Medium,DevOps
+Google,Software Engineer,Staff,Explain container orchestration.,Easy,DevOps
+Google,Backend Engineer,Fresher,Difference between blue-green and canary deployments.,Medium,DevOps
+Google,Frontend Engineer,Junior,What is infrastructure as code?,Medium,DevOps
+Google,Data Engineer,Mid-Level,Explain monitoring and logging.,Easy,DevOps
+Google,Software Engineer,Senior,Explain time and space complexity.,Easy,Data Structures & Algorithms
+Google,Backend Engineer,Staff,Difference between array and linked list.,Medium,Data Structures & Algorithms
+Google,Frontend Engineer,Fresher,Explain hashing and hash collisions.,Easy,Data Structures & Algorithms
+Google,Data Engineer,Junior,What is a balanced binary tree?,Medium,Data Structures & Algorithms
+Google,Software Engineer,Mid-Level,Explain BFS vs DFS.,Easy,Data Structures & Algorithms
+Google,Backend Engineer,Senior,What is dynamic programming?,Medium,Data Structures & Algorithms
+Google,Frontend Engineer,Staff,Explain object-oriented programming principles.,Medium,Behavioral / Fundamentals
+Google,Data Engineer,Fresher,What is SOLID design?,Medium,Behavioral / Fundamentals
+Google,Software Engineer,Junior,Explain MVC architecture.,Easy,Behavioral / Fundamentals
+Google,Backend Engineer,Mid-Level,Difference between abstraction and encapsulation.,Medium,Behavioral / Fundamentals
+Google,Frontend Engineer,Senior,Explain dependency injection.,Easy,Behavioral / Fundamentals
+Google,Data Engineer,Staff,What is clean code?,Medium,Behavioral / Fundamentals

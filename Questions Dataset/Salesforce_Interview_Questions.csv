@@ -1,0 +1,61 @@
+Company,Role,Experience,Question,Difficulty,Topic
+Salesforce,Software Engineer,Fresher,Explain REST principles and common HTTP methods.,Medium,APIs
+Salesforce,Backend Engineer,Junior,What makes an API idempotent and why is it important?,Medium,APIs
+Salesforce,Frontend Engineer,Mid-Level,Explain pagination and versioning strategies in APIs.,Medium,APIs
+Salesforce,Data Engineer,Senior,Difference between REST and GraphQL.,Medium,APIs
+Salesforce,Software Engineer,Staff,How do APIs handle authentication and authorization?,Medium,APIs
+Salesforce,Backend Engineer,Fresher,Explain common API security vulnerabilities.,Medium,APIs
+Salesforce,Frontend Engineer,Junior,Difference between SQL and NoSQL databases.,Medium,Databases
+Salesforce,Data Engineer,Mid-Level,Explain database indexing and its impact on performance.,Medium,Databases
+Salesforce,Software Engineer,Senior,What are ACID properties?,Medium,Databases
+Salesforce,Backend Engineer,Staff,Explain normalization and denormalization.,Medium,Databases
+Salesforce,Frontend Engineer,Fresher,What is database sharding?,Medium,Databases
+Salesforce,Data Engineer,Junior,Explain replication and failover mechanisms.,Medium,Databases
+Salesforce,Software Engineer,Mid-Level,Design a scalable URL shortening service.,Medium,System Design
+Salesforce,Backend Engineer,Senior,Explain load balancing strategies.,Easy,System Design
+Salesforce,Frontend Engineer,Staff,How would you design a notification system?,Medium,System Design
+Salesforce,Data Engineer,Fresher,Explain horizontal vs vertical scaling.,Easy,System Design
+Salesforce,Software Engineer,Junior,Design a basic caching strategy.,Medium,System Design
+Salesforce,Backend Engineer,Mid-Level,Explain trade-offs in distributed system design.,Medium,System Design
+Salesforce,Frontend Engineer,Senior,Explain process vs thread.,Easy,Operating Systems
+Salesforce,Data Engineer,Staff,What is context switching?,Medium,Operating Systems
+Salesforce,Software Engineer,Fresher,Explain virtual memory.,Easy,Operating Systems
+Salesforce,Backend Engineer,Junior,What is a deadlock and how is it prevented?,Medium,Operating Systems
+Salesforce,Frontend Engineer,Mid-Level,Explain scheduling algorithms.,Easy,Operating Systems
+Salesforce,Data Engineer,Senior,Difference between user mode and kernel mode.,Medium,Operating Systems
+Salesforce,Software Engineer,Staff,Explain how DNS works.,Easy,Networking
+Salesforce,Backend Engineer,Fresher,Difference between TCP and UDP.,Medium,Networking
+Salesforce,Frontend Engineer,Junior,What happens when you type a URL in a browser?,Medium,Networking
+Salesforce,Data Engineer,Mid-Level,Explain HTTP vs HTTPS.,Easy,Networking
+Salesforce,Software Engineer,Senior,What is a reverse proxy?,Medium,Networking
+Salesforce,Backend Engineer,Staff,Explain latency vs bandwidth.,Easy,Networking
+Salesforce,Frontend Engineer,Fresher,"Explain IaaS, PaaS, and SaaS.",Easy,Cloud Computing
+Salesforce,Data Engineer,Junior,What is auto-scaling?,Medium,Cloud Computing
+Salesforce,Software Engineer,Mid-Level,Explain cloud load balancing.,Easy,Cloud Computing
+Salesforce,Backend Engineer,Senior,What is serverless computing?,Medium,Cloud Computing
+Salesforce,Frontend Engineer,Staff,Explain multi-region deployment.,Easy,Cloud Computing
+Salesforce,Data Engineer,Fresher,How does cloud monitoring work?,Medium,Cloud Computing
+Salesforce,Software Engineer,Junior,Explain authentication vs authorization.,Medium,Security
+Salesforce,Backend Engineer,Mid-Level,What is OAuth 2.0?,Medium,Security
+Salesforce,Frontend Engineer,Senior,Explain common web security attacks.,Easy,Security
+Salesforce,Data Engineer,Staff,What is encryption at rest and in transit?,Medium,Security
+Salesforce,Software Engineer,Fresher,Explain role-based access control.,Easy,Security
+Salesforce,Backend Engineer,Junior,What is zero-trust security?,Medium,Security
+Salesforce,Frontend Engineer,Mid-Level,Explain CI/CD pipelines.,Easy,DevOps
+Salesforce,Data Engineer,Senior,What is Docker used for?,Medium,DevOps
+Salesforce,Software Engineer,Staff,Explain container orchestration.,Easy,DevOps
+Salesforce,Backend Engineer,Fresher,Difference between blue-green and canary deployments.,Medium,DevOps
+Salesforce,Frontend Engineer,Junior,What is infrastructure as code?,Medium,DevOps
+Salesforce,Data Engineer,Mid-Level,Explain monitoring and logging.,Easy,DevOps
+Salesforce,Software Engineer,Senior,Explain time and space complexity.,Easy,Data Structures & Algorithms
+Salesforce,Backend Engineer,Staff,Difference between array and linked list.,Medium,Data Structures & Algorithms
+Salesforce,Frontend Engineer,Fresher,Explain hashing and hash collisions.,Easy,Data Structures & Algorithms
+Salesforce,Data Engineer,Junior,What is a balanced binary tree?,Medium,Data Structures & Algorithms
+Salesforce,Software Engineer,Mid-Level,Explain BFS vs DFS.,Easy,Data Structures & Algorithms
+Salesforce,Backend Engineer,Senior,What is dynamic programming?,Medium,Data Structures & Algorithms
+Salesforce,Frontend Engineer,Staff,Explain object-oriented programming principles.,Medium,Behavioral / Fundamentals
+Salesforce,Data Engineer,Fresher,What is SOLID design?,Medium,Behavioral / Fundamentals
+Salesforce,Software Engineer,Junior,Explain MVC architecture.,Easy,Behavioral / Fundamentals
+Salesforce,Backend Engineer,Mid-Level,Difference between abstraction and encapsulation.,Medium,Behavioral / Fundamentals
+Salesforce,Frontend Engineer,Senior,Explain dependency injection.,Easy,Behavioral / Fundamentals
+Salesforce,Data Engineer,Staff,What is clean code?,Medium,Behavioral / Fundamentals

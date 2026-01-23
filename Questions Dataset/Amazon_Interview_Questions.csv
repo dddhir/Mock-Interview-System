@@ -1,0 +1,61 @@
+Company,Role,Experience,Question,Difficulty,Topic
+Amazon,Software Engineer,Fresher,Explain REST principles and common HTTP methods.,Medium,APIs
+Amazon,Backend Engineer,Junior,What makes an API idempotent and why is it important?,Medium,APIs
+Amazon,Frontend Engineer,Mid-Level,Explain pagination and versioning strategies in APIs.,Medium,APIs
+Amazon,Data Engineer,Senior,Difference between REST and GraphQL.,Medium,APIs
+Amazon,Software Engineer,Staff,How do APIs handle authentication and authorization?,Medium,APIs
+Amazon,Backend Engineer,Fresher,Explain common API security vulnerabilities.,Medium,APIs
+Amazon,Frontend Engineer,Junior,Difference between SQL and NoSQL databases.,Medium,Databases
+Amazon,Data Engineer,Mid-Level,Explain database indexing and its impact on performance.,Medium,Databases
+Amazon,Software Engineer,Senior,What are ACID properties?,Medium,Databases
+Amazon,Backend Engineer,Staff,Explain normalization and denormalization.,Medium,Databases
+Amazon,Frontend Engineer,Fresher,What is database sharding?,Medium,Databases
+Amazon,Data Engineer,Junior,Explain replication and failover mechanisms.,Medium,Databases
+Amazon,Software Engineer,Mid-Level,Design a scalable URL shortening service.,Medium,System Design
+Amazon,Backend Engineer,Senior,Explain load balancing strategies.,Easy,System Design
+Amazon,Frontend Engineer,Staff,How would you design a notification system?,Medium,System Design
+Amazon,Data Engineer,Fresher,Explain horizontal vs vertical scaling.,Easy,System Design
+Amazon,Software Engineer,Junior,Design a basic caching strategy.,Medium,System Design
+Amazon,Backend Engineer,Mid-Level,Explain trade-offs in distributed system design.,Medium,System Design
+Amazon,Frontend Engineer,Senior,Explain process vs thread.,Easy,Operating Systems
+Amazon,Data Engineer,Staff,What is context switching?,Medium,Operating Systems
+Amazon,Software Engineer,Fresher,Explain virtual memory.,Easy,Operating Systems
+Amazon,Backend Engineer,Junior,What is a deadlock and how is it prevented?,Medium,Operating Systems
+Amazon,Frontend Engineer,Mid-Level,Explain scheduling algorithms.,Easy,Operating Systems
+Amazon,Data Engineer,Senior,Difference between user mode and kernel mode.,Medium,Operating Systems
+Amazon,Software Engineer,Staff,Explain how DNS works.,Easy,Networking
+Amazon,Backend Engineer,Fresher,Difference between TCP and UDP.,Medium,Networking
+Amazon,Frontend Engineer,Junior,What happens when you type a URL in a browser?,Medium,Networking
+Amazon,Data Engineer,Mid-Level,Explain HTTP vs HTTPS.,Easy,Networking
+Amazon,Software Engineer,Senior,What is a reverse proxy?,Medium,Networking
+Amazon,Backend Engineer,Staff,Explain latency vs bandwidth.,Easy,Networking
+Amazon,Frontend Engineer,Fresher,"Explain IaaS, PaaS, and SaaS.",Easy,Cloud Computing
+Amazon,Data Engineer,Junior,What is auto-scaling?,Medium,Cloud Computing
+Amazon,Software Engineer,Mid-Level,Explain cloud load balancing.,Easy,Cloud Computing
+Amazon,Backend Engineer,Senior,What is serverless computing?,Medium,Cloud Computing
+Amazon,Frontend Engineer,Staff,Explain multi-region deployment.,Easy,Cloud Computing
+Amazon,Data Engineer,Fresher,How does cloud monitoring work?,Medium,Cloud Computing
+Amazon,Software Engineer,Junior,Explain authentication vs authorization.,Medium,Security
+Amazon,Backend Engineer,Mid-Level,What is OAuth 2.0?,Medium,Security
+Amazon,Frontend Engineer,Senior,Explain common web security attacks.,Easy,Security
+Amazon,Data Engineer,Staff,What is encryption at rest and in transit?,Medium,Security
+Amazon,Software Engineer,Fresher,Explain role-based access control.,Easy,Security
+Amazon,Backend Engineer,Junior,What is zero-trust security?,Medium,Security
+Amazon,Frontend Engineer,Mid-Level,Explain CI/CD pipelines.,Easy,DevOps
+Amazon,Data Engineer,Senior,What is Docker used for?,Medium,DevOps
+Amazon,Software Engineer,Staff,Explain container orchestration.,Easy,DevOps
+Amazon,Backend Engineer,Fresher,Difference between blue-green and canary deployments.,Medium,DevOps
+Amazon,Frontend Engineer,Junior,What is infrastructure as code?,Medium,DevOps
+Amazon,Data Engineer,Mid-Level,Explain monitoring and logging.,Easy,DevOps
+Amazon,Software Engineer,Senior,Explain time and space complexity.,Easy,Data Structures & Algorithms
+Amazon,Backend Engineer,Staff,Difference between array and linked list.,Medium,Data Structures & Algorithms
+Amazon,Frontend Engineer,Fresher,Explain hashing and hash collisions.,Easy,Data Structures & Algorithms
+Amazon,Data Engineer,Junior,What is a balanced binary tree?,Medium,Data Structures & Algorithms
+Amazon,Software Engineer,Mid-Level,Explain BFS vs DFS.,Easy,Data Structures & Algorithms
+Amazon,Backend Engineer,Senior,What is dynamic programming?,Medium,Data Structures & Algorithms
+Amazon,Frontend Engineer,Staff,Explain object-oriented programming principles.,Medium,Behavioral / Fundamentals
+Amazon,Data Engineer,Fresher,What is SOLID design?,Medium,Behavioral / Fundamentals
+Amazon,Software Engineer,Junior,Explain MVC architecture.,Easy,Behavioral / Fundamentals
+Amazon,Backend Engineer,Mid-Level,Difference between abstraction and encapsulation.,Medium,Behavioral / Fundamentals
+Amazon,Frontend Engineer,Senior,Explain dependency injection.,Easy,Behavioral / Fundamentals
+Amazon,Data Engineer,Staff,What is clean code?,Medium,Behavioral / Fundamentals

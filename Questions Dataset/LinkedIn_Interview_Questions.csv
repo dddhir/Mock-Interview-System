@@ -1,0 +1,61 @@
+Company,Role,Experience,Question,Difficulty,Topic
+LinkedIn,Software Engineer,Fresher,Explain REST principles and common HTTP methods.,Medium,APIs
+LinkedIn,Backend Engineer,Junior,What makes an API idempotent and why is it important?,Medium,APIs
+LinkedIn,Frontend Engineer,Mid-Level,Explain pagination and versioning strategies in APIs.,Medium,APIs
+LinkedIn,Data Engineer,Senior,Difference between REST and GraphQL.,Medium,APIs
+LinkedIn,Software Engineer,Staff,How do APIs handle authentication and authorization?,Medium,APIs
+LinkedIn,Backend Engineer,Fresher,Explain common API security vulnerabilities.,Medium,APIs
+LinkedIn,Frontend Engineer,Junior,Difference between SQL and NoSQL databases.,Medium,Databases
+LinkedIn,Data Engineer,Mid-Level,Explain database indexing and its impact on performance.,Medium,Databases
+LinkedIn,Software Engineer,Senior,What are ACID properties?,Medium,Databases
+LinkedIn,Backend Engineer,Staff,Explain normalization and denormalization.,Medium,Databases
+LinkedIn,Frontend Engineer,Fresher,What is database sharding?,Medium,Databases
+LinkedIn,Data Engineer,Junior,Explain replication and failover mechanisms.,Medium,Databases
+LinkedIn,Software Engineer,Mid-Level,Design a scalable URL shortening service.,Medium,System Design
+LinkedIn,Backend Engineer,Senior,Explain load balancing strategies.,Easy,System Design
+LinkedIn,Frontend Engineer,Staff,How would you design a notification system?,Medium,System Design
+LinkedIn,Data Engineer,Fresher,Explain horizontal vs vertical scaling.,Easy,System Design
+LinkedIn,Software Engineer,Junior,Design a basic caching strategy.,Medium,System Design
+LinkedIn,Backend Engineer,Mid-Level,Explain trade-offs in distributed system design.,Medium,System Design
+LinkedIn,Frontend Engineer,Senior,Explain process vs thread.,Easy,Operating Systems
+LinkedIn,Data Engineer,Staff,What is context switching?,Medium,Operating Systems
+LinkedIn,Software Engineer,Fresher,Explain virtual memory.,Easy,Operating Systems
+LinkedIn,Backend Engineer,Junior,What is a deadlock and how is it prevented?,Medium,Operating Systems
+LinkedIn,Frontend Engineer,Mid-Level,Explain scheduling algorithms.,Easy,Operating Systems
+LinkedIn,Data Engineer,Senior,Difference between user mode and kernel mode.,Medium,Operating Systems
+LinkedIn,Software Engineer,Staff,Explain how DNS works.,Easy,Networking
+LinkedIn,Backend Engineer,Fresher,Difference between TCP and UDP.,Medium,Networking
+LinkedIn,Frontend Engineer,Junior,What happens when you type a URL in a browser?,Medium,Networking
+LinkedIn,Data Engineer,Mid-Level,Explain HTTP vs HTTPS.,Easy,Networking
+LinkedIn,Software Engineer,Senior,What is a reverse proxy?,Medium,Networking
+LinkedIn,Backend Engineer,Staff,Explain latency vs bandwidth.,Easy,Networking
+LinkedIn,Frontend Engineer,Fresher,"Explain IaaS, PaaS, and SaaS.",Easy,Cloud Computing
+LinkedIn,Data Engineer,Junior,What is auto-scaling?,Medium,Cloud Computing
+LinkedIn,Software Engineer,Mid-Level,Explain cloud load balancing.,Easy,Cloud Computing
+LinkedIn,Backend Engineer,Senior,What is serverless computing?,Medium,Cloud Computing
+LinkedIn,Frontend Engineer,Staff,Explain multi-region deployment.,Easy,Cloud Computing
+LinkedIn,Data Engineer,Fresher,How does cloud monitoring work?,Medium,Cloud Computing
+LinkedIn,Software Engineer,Junior,Explain authentication vs authorization.,Medium,Security
+LinkedIn,Backend Engineer,Mid-Level,What is OAuth 2.0?,Medium,Security
+LinkedIn,Frontend Engineer,Senior,Explain common web security attacks.,Easy,Security
+LinkedIn,Data Engineer,Staff,What is encryption at rest and in transit?,Medium,Security
+LinkedIn,Software Engineer,Fresher,Explain role-based access control.,Easy,Security
+LinkedIn,Backend Engineer,Junior,What is zero-trust security?,Medium,Security
+LinkedIn,Frontend Engineer,Mid-Level,Explain CI/CD pipelines.,Easy,DevOps
+LinkedIn,Data Engineer,Senior,What is Docker used for?,Medium,DevOps
+LinkedIn,Software Engineer,Staff,Explain container orchestration.,Easy,DevOps
+LinkedIn,Backend Engineer,Fresher,Difference between blue-green and canary deployments.,Medium,DevOps
+LinkedIn,Frontend Engineer,Junior,What is infrastructure as code?,Medium,DevOps
+LinkedIn,Data Engineer,Mid-Level,Explain monitoring and logging.,Easy,DevOps
+LinkedIn,Software Engineer,Senior,Explain time and space complexity.,Easy,Data Structures & Algorithms
+LinkedIn,Backend Engineer,Staff,Difference between array and linked list.,Medium,Data Structures & Algorithms
+LinkedIn,Frontend Engineer,Fresher,Explain hashing and hash collisions.,Easy,Data Structures & Algorithms
+LinkedIn,Data Engineer,Junior,What is a balanced binary tree?,Medium,Data Structures & Algorithms
+LinkedIn,Software Engineer,Mid-Level,Explain BFS vs DFS.,Easy,Data Structures & Algorithms
+LinkedIn,Backend Engineer,Senior,What is dynamic programming?,Medium,Data Structures & Algorithms
+LinkedIn,Frontend Engineer,Staff,Explain object-oriented programming principles.,Medium,Behavioral / Fundamentals
+LinkedIn,Data Engineer,Fresher,What is SOLID design?,Medium,Behavioral / Fundamentals
+LinkedIn,Software Engineer,Junior,Explain MVC architecture.,Easy,Behavioral / Fundamentals
+LinkedIn,Backend Engineer,Mid-Level,Difference between abstraction and encapsulation.,Medium,Behavioral / Fundamentals
+LinkedIn,Frontend Engineer,Senior,Explain dependency injection.,Easy,Behavioral / Fundamentals
+LinkedIn,Data Engineer,Staff,What is clean code?,Medium,Behavioral / Fundamentals

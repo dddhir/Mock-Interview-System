@@ -1,0 +1,61 @@
+Company,Role,Experience,Question,Difficulty,Topic
+IBM,Software Engineer,Fresher,Explain REST principles and common HTTP methods.,Medium,APIs
+IBM,Backend Engineer,Junior,What makes an API idempotent and why is it important?,Medium,APIs
+IBM,Frontend Engineer,Mid-Level,Explain pagination and versioning strategies in APIs.,Medium,APIs
+IBM,Data Engineer,Senior,Difference between REST and GraphQL.,Medium,APIs
+IBM,Software Engineer,Staff,How do APIs handle authentication and authorization?,Medium,APIs
+IBM,Backend Engineer,Fresher,Explain common API security vulnerabilities.,Medium,APIs
+IBM,Frontend Engineer,Junior,Difference between SQL and NoSQL databases.,Medium,Databases
+IBM,Data Engineer,Mid-Level,Explain database indexing and its impact on performance.,Medium,Databases
+IBM,Software Engineer,Senior,What are ACID properties?,Medium,Databases
+IBM,Backend Engineer,Staff,Explain normalization and denormalization.,Medium,Databases
+IBM,Frontend Engineer,Fresher,What is database sharding?,Medium,Databases
+IBM,Data Engineer,Junior,Explain replication and failover mechanisms.,Medium,Databases
+IBM,Software Engineer,Mid-Level,Design a scalable URL shortening service.,Medium,System Design
+IBM,Backend Engineer,Senior,Explain load balancing strategies.,Easy,System Design
+IBM,Frontend Engineer,Staff,How would you design a notification system?,Medium,System Design
+IBM,Data Engineer,Fresher,Explain horizontal vs vertical scaling.,Easy,System Design
+IBM,Software Engineer,Junior,Design a basic caching strategy.,Medium,System Design
+IBM,Backend Engineer,Mid-Level,Explain trade-offs in distributed system design.,Medium,System Design
+IBM,Frontend Engineer,Senior,Explain process vs thread.,Easy,Operating Systems
+IBM,Data Engineer,Staff,What is context switching?,Medium,Operating Systems
+IBM,Software Engineer,Fresher,Explain virtual memory.,Easy,Operating Systems
+IBM,Backend Engineer,Junior,What is a deadlock and how is it prevented?,Medium,Operating Systems
+IBM,Frontend Engineer,Mid-Level,Explain scheduling algorithms.,Easy,Operating Systems
+IBM,Data Engineer,Senior,Difference between user mode and kernel mode.,Medium,Operating Systems
+IBM,Software Engineer,Staff,Explain how DNS works.,Easy,Networking
+IBM,Backend Engineer,Fresher,Difference between TCP and UDP.,Medium,Networking
+IBM,Frontend Engineer,Junior,What happens when you type a URL in a browser?,Medium,Networking
+IBM,Data Engineer,Mid-Level,Explain HTTP vs HTTPS.,Easy,Networking
+IBM,Software Engineer,Senior,What is a reverse proxy?,Medium,Networking
+IBM,Backend Engineer,Staff,Explain latency vs bandwidth.,Easy,Networking
+IBM,Frontend Engineer,Fresher,"Explain IaaS, PaaS, and SaaS.",Easy,Cloud Computing
+IBM,Data Engineer,Junior,What is auto-scaling?,Medium,Cloud Computing
+IBM,Software Engineer,Mid-Level,Explain cloud load balancing.,Easy,Cloud Computing
+IBM,Backend Engineer,Senior,What is serverless computing?,Medium,Cloud Computing
+IBM,Frontend Engineer,Staff,Explain multi-region deployment.,Easy,Cloud Computing
+IBM,Data Engineer,Fresher,How does cloud monitoring work?,Medium,Cloud Computing
+IBM,Software Engineer,Junior,Explain authentication vs authorization.,Medium,Security
+IBM,Backend Engineer,Mid-Level,What is OAuth 2.0?,Medium,Security
+IBM,Frontend Engineer,Senior,Explain common web security attacks.,Easy,Security
+IBM,Data Engineer,Staff,What is encryption at rest and in transit?,Medium,Security
+IBM,Software Engineer,Fresher,Explain role-based access control.,Easy,Security
+IBM,Backend Engineer,Junior,What is zero-trust security?,Medium,Security
+IBM,Frontend Engineer,Mid-Level,Explain CI/CD pipelines.,Easy,DevOps
+IBM,Data Engineer,Senior,What is Docker used for?,Medium,DevOps
+IBM,Software Engineer,Staff,Explain container orchestration.,Easy,DevOps
+IBM,Backend Engineer,Fresher,Difference between blue-green and canary deployments.,Medium,DevOps
+IBM,Frontend Engineer,Junior,What is infrastructure as code?,Medium,DevOps
+IBM,Data Engineer,Mid-Level,Explain monitoring and logging.,Easy,DevOps
+IBM,Software Engineer,Senior,Explain time and space complexity.,Easy,Data Structures & Algorithms
+IBM,Backend Engineer,Staff,Difference between array and linked list.,Medium,Data Structures & Algorithms
+IBM,Frontend Engineer,Fresher,Explain hashing and hash collisions.,Easy,Data Structures & Algorithms
+IBM,Data Engineer,Junior,What is a balanced binary tree?,Medium,Data Structures & Algorithms
+IBM,Software Engineer,Mid-Level,Explain BFS vs DFS.,Easy,Data Structures & Algorithms
+IBM,Backend Engineer,Senior,What is dynamic programming?,Medium,Data Structures & Algorithms
+IBM,Frontend Engineer,Staff,Explain object-oriented programming principles.,Medium,Behavioral / Fundamentals
+IBM,Data Engineer,Fresher,What is SOLID design?,Medium,Behavioral / Fundamentals
+IBM,Software Engineer,Junior,Explain MVC architecture.,Easy,Behavioral / Fundamentals
+IBM,Backend Engineer,Mid-Level,Difference between abstraction and encapsulation.,Medium,Behavioral / Fundamentals
+IBM,Frontend Engineer,Senior,Explain dependency injection.,Easy,Behavioral / Fundamentals
+IBM,Data Engineer,Staff,What is clean code?,Medium,Behavioral / Fundamentals

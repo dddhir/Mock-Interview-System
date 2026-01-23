@@ -1,0 +1,61 @@
+Company,Role,Experience,Question,Difficulty,Topic
+Adobe,Software Engineer,Fresher,Explain REST principles and common HTTP methods.,Medium,APIs
+Adobe,Backend Engineer,Junior,What makes an API idempotent and why is it important?,Medium,APIs
+Adobe,Frontend Engineer,Mid-Level,Explain pagination and versioning strategies in APIs.,Medium,APIs
+Adobe,Data Engineer,Senior,Difference between REST and GraphQL.,Medium,APIs
+Adobe,Software Engineer,Staff,How do APIs handle authentication and authorization?,Medium,APIs
+Adobe,Backend Engineer,Fresher,Explain common API security vulnerabilities.,Medium,APIs
+Adobe,Frontend Engineer,Junior,Difference between SQL and NoSQL databases.,Medium,Databases
+Adobe,Data Engineer,Mid-Level,Explain database indexing and its impact on performance.,Medium,Databases
+Adobe,Software Engineer,Senior,What are ACID properties?,Medium,Databases
+Adobe,Backend Engineer,Staff,Explain normalization and denormalization.,Medium,Databases
+Adobe,Frontend Engineer,Fresher,What is database sharding?,Medium,Databases
+Adobe,Data Engineer,Junior,Explain replication and failover mechanisms.,Medium,Databases
+Adobe,Software Engineer,Mid-Level,Design a scalable URL shortening service.,Medium,System Design
+Adobe,Backend Engineer,Senior,Explain load balancing strategies.,Easy,System Design
+Adobe,Frontend Engineer,Staff,How would you design a notification system?,Medium,System Design
+Adobe,Data Engineer,Fresher,Explain horizontal vs vertical scaling.,Easy,System Design
+Adobe,Software Engineer,Junior,Design a basic caching strategy.,Medium,System Design
+Adobe,Backend Engineer,Mid-Level,Explain trade-offs in distributed system design.,Medium,System Design
+Adobe,Frontend Engineer,Senior,Explain process vs thread.,Easy,Operating Systems
+Adobe,Data Engineer,Staff,What is context switching?,Medium,Operating Systems
+Adobe,Software Engineer,Fresher,Explain virtual memory.,Easy,Operating Systems
+Adobe,Backend Engineer,Junior,What is a deadlock and how is it prevented?,Medium,Operating Systems
+Adobe,Frontend Engineer,Mid-Level,Explain scheduling algorithms.,Easy,Operating Systems
+Adobe,Data Engineer,Senior,Difference between user mode and kernel mode.,Medium,Operating Systems
+Adobe,Software Engineer,Staff,Explain how DNS works.,Easy,Networking
+Adobe,Backend Engineer,Fresher,Difference between TCP and UDP.,Medium,Networking
+Adobe,Frontend Engineer,Junior,What happens when you type a URL in a browser?,Medium,Networking
+Adobe,Data Engineer,Mid-Level,Explain HTTP vs HTTPS.,Easy,Networking
+Adobe,Software Engineer,Senior,What is a reverse proxy?,Medium,Networking
+Adobe,Backend Engineer,Staff,Explain latency vs bandwidth.,Easy,Networking
+Adobe,Frontend Engineer,Fresher,"Explain IaaS, PaaS, and SaaS.",Easy,Cloud Computing
+Adobe,Data Engineer,Junior,What is auto-scaling?,Medium,Cloud Computing
+Adobe,Software Engineer,Mid-Level,Explain cloud load balancing.,Easy,Cloud Computing
+Adobe,Backend Engineer,Senior,What is serverless computing?,Medium,Cloud Computing
+Adobe,Frontend Engineer,Staff,Explain multi-region deployment.,Easy,Cloud Computing
+Adobe,Data Engineer,Fresher,How does cloud monitoring work?,Medium,Cloud Computing
+Adobe,Software Engineer,Junior,Explain authentication vs authorization.,Medium,Security
+Adobe,Backend Engineer,Mid-Level,What is OAuth 2.0?,Medium,Security
+Adobe,Frontend Engineer,Senior,Explain common web security attacks.,Easy,Security
+Adobe,Data Engineer,Staff,What is encryption at rest and in transit?,Medium,Security
+Adobe,Software Engineer,Fresher,Explain role-based access control.,Easy,Security
+Adobe,Backend Engineer,Junior,What is zero-trust security?,Medium,Security
+Adobe,Frontend Engineer,Mid-Level,Explain CI/CD pipelines.,Easy,DevOps
+Adobe,Data Engineer,Senior,What is Docker used for?,Medium,DevOps
+Adobe,Software Engineer,Staff,Explain container orchestration.,Easy,DevOps
+Adobe,Backend Engineer,Fresher,Difference between blue-green and canary deployments.,Medium,DevOps
+Adobe,Frontend Engineer,Junior,What is infrastructure as code?,Medium,DevOps
+Adobe,Data Engineer,Mid-Level,Explain monitoring and logging.,Easy,DevOps
+Adobe,Software Engineer,Senior,Explain time and space complexity.,Easy,Data Structures & Algorithms
+Adobe,Backend Engineer,Staff,Difference between array and linked list.,Medium,Data Structures & Algorithms
+Adobe,Frontend Engineer,Fresher,Explain hashing and hash collisions.,Easy,Data Structures & Algorithms
+Adobe,Data Engineer,Junior,What is a balanced binary tree?,Medium,Data Structures & Algorithms
+Adobe,Software Engineer,Mid-Level,Explain BFS vs DFS.,Easy,Data Structures & Algorithms
+Adobe,Backend Engineer,Senior,What is dynamic programming?,Medium,Data Structures & Algorithms
+Adobe,Frontend Engineer,Staff,Explain object-oriented programming principles.,Medium,Behavioral / Fundamentals
+Adobe,Data Engineer,Fresher,What is SOLID design?,Medium,Behavioral / Fundamentals
+Adobe,Software Engineer,Junior,Explain MVC architecture.,Easy,Behavioral / Fundamentals
+Adobe,Backend Engineer,Mid-Level,Difference between abstraction and encapsulation.,Medium,Behavioral / Fundamentals
+Adobe,Frontend Engineer,Senior,Explain dependency injection.,Easy,Behavioral / Fundamentals
+Adobe,Data Engineer,Staff,What is clean code?,Medium,Behavioral / Fundamentals
