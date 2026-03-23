@@ -1,0 +1,12 @@
+node_modules
+.git
+.env.local
+.DS_Store
+ai-models
+logs
+uploads
+.kiro
+*.md
+.gitignore
+.vscode
+.idea

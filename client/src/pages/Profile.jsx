@@ -3,6 +3,7 @@ import { useAuth } from '../contexts/AuthContext'
 import { Upload, User, Save, FileText } from 'lucide-react'
 import axios from 'axios'
 import toast from 'react-hot-toast'
+import ProgressChart from '../components/ProgressChart'
 
 const Profile = () => {
   const { user, updateProfile } = useAuth()
@@ -14,6 +15,7 @@ const Profile = () => {
   const [loading, setLoading] = useState(false)
   const [resumeFile, setResumeFile] = useState(null)
   const [uploadingResume, setUploadingResume] = useState(false)
+  const [interviewHistory, setInterviewHistory] = useState([])
 
   useEffect(() => {
     if (user) {
@@ -23,6 +25,7 @@ const Profile = () => {
         experience: user.experience || ''
       })
     }
+    fetchInterviewHistory()
   }, [user])
 
   const handleInputChange = (e) => {
@@ -31,6 +34,18 @@ const Profile = () => {
       ...prev,
       [name]: value
     }))
+  }
+
+  const fetchInterviewHistory = async () => {
+    try {
+      const token = localStorage.getItem('token')
+      const response = await axios.get('/api/auth/interview-history', {
+        headers: { Authorization: `Bearer ${token}` }
+      })
+      setInterviewHistory(response.data.history || [])
+    } catch (error) {
+      console.error('Error fetching interview history:', error)
+    }
   }
 
 
@@ -323,6 +338,13 @@ const Profile = () => {
               </div>
             </div>
           </div>
+
+          {/* Interview Progress Chart */}
+          <ProgressChart 
+            data={interviewHistory} 
+            title="Your Interview Progress" 
+            height={350} 
+          />
 
           {/* Tips */}
           <div className="bg-gray-50 rounded-lg p-6">

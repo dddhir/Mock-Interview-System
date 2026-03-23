@@ -11,6 +11,7 @@ import Profile from './pages/Profile'
 import InterviewSetup from './pages/InterviewSetup'
 import InterviewHistory from './pages/InterviewHistory'
 import Performance from './pages/Performance'
+import AuthDebug from './components/AuthDebug'
 
 function App() {
   return (
@@ -24,11 +25,13 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/interview-setup" element={<InterviewSetup />} />
+            <Route path="/test-interview" element={<InterviewSetup />} />
             <Route path="/interview-history" element={<InterviewHistory />} />
             <Route path="/performance" element={<Performance />} />
             <Route path="/interview/:sessionId" element={<Interview />} />
             <Route path="/results/:sessionId" element={<Results />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/debug" element={<AuthDebug />} />
           </Routes>
         </main>
       </div>

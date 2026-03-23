@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { Upload, FileText, User, Briefcase, Building2, ArrowRight, X, Search, Plus } from 'lucide-react'
 import axios from 'axios'
 import toast from 'react-hot-toast'
 
 const InterviewSetup = () => {
   const navigate = useNavigate()
+  const location = useLocation()
+  const isQuickTest = location.state?.quickTest || location.pathname === '/test-interview'
   const [loading, setLoading] = useState(false)
   const [companiesLoading, setCompaniesLoading] = useState(true)
   const [companies, setCompanies] = useState([])
@@ -22,7 +24,7 @@ const InterviewSetup = () => {
     resumeContent: '',
     projects: [],
     workExperience: [],
-    questionCount: 10
+    questionCount: 2
   })
 
   const experienceLevels = [
@@ -34,28 +36,124 @@ const InterviewSetup = () => {
   ]
 
   const questionCountOptions = [
+    { value: 2, label: '2 Questions', description: 'Quick test (~5 mins)' },
     { value: 5, label: '5 Questions', description: 'Quick practice (~10 mins)' },
     { value: 10, label: '10 Questions', description: 'Standard interview (~20 mins)' },
     { value: 15, label: '15 Questions', description: 'Comprehensive (~30 mins)' },
     { value: 20, label: '20 Questions', description: 'Full interview (~45 mins)' }
   ]
 
-  const commonRoles = [
-    'Software Engineer',
-    'Backend Engineer', 
-    'Frontend Engineer',
-    'Full Stack Engineer',
-    'Data Engineer',
-    'DevOps Engineer',
-    'Mobile Developer',
-    'Product Manager',
-    'Data Scientist',
-    'Machine Learning Engineer'
+  const jobRoles = [
+    // Software Engineering
+    { category: "Software Engineering", roles: [
+      "Software Engineer",
+      "Senior Software Engineer", 
+      "Staff Software Engineer",
+      "Principal Software Engineer",
+      "Software Architect"
+    ]},
+    // Frontend Development
+    { category: "Frontend Development", roles: [
+      "Frontend Developer",
+      "Frontend Engineer", 
+      "React Developer",
+      "Angular Developer",
+      "Vue.js Developer",
+      "UI Developer"
+    ]},
+    // Backend Development  
+    { category: "Backend Development", roles: [
+      "Backend Developer",
+      "Backend Engineer",
+      "API Developer", 
+      "Node.js Developer",
+      "Python Developer",
+      "Java Developer",
+      ".NET Developer"
+    ]},
+    // Full Stack
+    { category: "Full Stack", roles: [
+      "Full Stack Developer",
+      "Full Stack Engineer",
+      "MEAN Stack Developer",
+      "MERN Stack Developer"
+    ]},
+    // Mobile Development
+    { category: "Mobile Development", roles: [
+      "Mobile Developer",
+      "iOS Developer", 
+      "Android Developer",
+      "React Native Developer",
+      "Flutter Developer"
+    ]},
+    // Data & Analytics
+    { category: "Data & Analytics", roles: [
+      "Data Scientist",
+      "Data Engineer", 
+      "Data Analyst",
+      "Machine Learning Engineer",
+      "AI Engineer",
+      "Business Intelligence Developer"
+    ]},
+    // DevOps & Infrastructure
+    { category: "DevOps & Infrastructure", roles: [
+      "DevOps Engineer",
+      "Site Reliability Engineer (SRE)",
+      "Cloud Engineer", 
+      "Infrastructure Engineer",
+      "Platform Engineer",
+      "Systems Administrator"
+    ]},
+    // Security
+    { category: "Security", roles: [
+      "Security Engineer",
+      "Cybersecurity Analyst",
+      "Application Security Engineer",
+      "Information Security Analyst"
+    ]},
+    // Product & Design
+    { category: "Product & Design", roles: [
+      "Product Manager",
+      "Technical Product Manager",
+      "UX/UI Designer",
+      "Product Designer"
+    ]},
+    // QA & Testing
+    { category: "QA & Testing", roles: [
+      "QA Engineer",
+      "Test Engineer",
+      "Automation Engineer", 
+      "Performance Test Engineer"
+    ]},
+    // Leadership
+    { category: "Leadership", roles: [
+      "Engineering Manager",
+      "Technical Lead",
+      "Team Lead",
+      "CTO",
+      "VP of Engineering"
+    ]}
   ]
+
+  // Flatten roles for easy searching
+  const allRoles = jobRoles.flatMap(category => category.roles)
 
   useEffect(() => {
     fetchCompanies()
   }, [])
+
+  // Handle quick test initialization
+  useEffect(() => {
+    if (isQuickTest) {
+      setFormData(prev => ({
+        ...prev,
+        company: 'google', // Default to Google for quick test
+        targetRole: 'Software Engineer',
+        experience: 'mid',
+        questionCount: 2
+      }))
+    }
+  }, [isQuickTest])
 
   // Debounced skill search
   useEffect(() => {
@@ -215,7 +313,10 @@ const InterviewSetup = () => {
       }
 
       console.log('Starting interview with:', interviewData)
-      const response = await axios.post('/api/interview/start', interviewData)
+      const token = localStorage.getItem('token')
+      const response = await axios.post('/api/interview/start', interviewData, {
+        headers: { Authorization: `Bearer ${token}` }
+      })
 
       if (response.data.success) {
         toast.success('Interview started!')
@@ -236,8 +337,16 @@ const InterviewSetup = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between py-6">
             <div>
-              <h1 className="text-3xl font-bold text-gray-900">Interview Setup</h1>
-              <p className="text-gray-600 mt-1">Configure your personalized interview experience</p>
+              <h1 className="text-3xl font-bold text-gray-900">
+                {isQuickTest ? 'Quick Test Setup' : 'Interview Setup'}
+                {isQuickTest && <span className="ml-2 text-sm bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full">2 Questions</span>}
+              </h1>
+              <p className="text-gray-600 mt-1">
+                {isQuickTest 
+                  ? 'Quick 2-question test to try the enhanced feedback system' 
+                  : 'Configure your personalized interview experience'
+                }
+              </p>
             </div>
             <button
               onClick={() => navigate('/dashboard')}
@@ -420,22 +529,24 @@ const InterviewSetup = () => {
                 <h2 className="text-xl font-semibold text-gray-900">Target Role</h2>
               </div>
               
-              <input
-                type="text"
+              <select
                 name="targetRole"
                 value={formData.targetRole}
                 onChange={handleInputChange}
-                placeholder="e.g., Software Engineer"
                 className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 text-lg"
-                list="common-roles"
                 required
-              />
-              
-              <datalist id="common-roles">
-                {commonRoles.map(role => (
-                  <option key={role} value={role} />
+              >
+                <option value="">Select a role...</option>
+                {jobRoles.map(category => (
+                  <optgroup key={category.category} label={category.category}>
+                    {category.roles.map(role => (
+                      <option key={role} value={role}>
+                        {role}
+                      </option>
+                    ))}
+                  </optgroup>
                 ))}
-              </datalist>
+              </select>
             </div>
 
             {/* Experience Level */}
@@ -465,13 +576,17 @@ const InterviewSetup = () => {
               <div className="flex items-center mb-4">
                 <FileText className="h-6 w-6 text-indigo-600 mr-2" />
                 <h2 className="text-xl font-semibold text-gray-900">Questions</h2>
+                {isQuickTest && <span className="ml-2 text-sm bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full">Fixed for Quick Test</span>}
               </div>
               
               <select
                 name="questionCount"
                 value={formData.questionCount}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 text-lg"
+                disabled={isQuickTest}
+                className={`w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 text-lg ${
+                  isQuickTest ? 'bg-gray-100 cursor-not-allowed' : ''
+                }`}
               >
                 {questionCountOptions.map(opt => (
                   <option key={opt.value} value={opt.value}>
@@ -481,7 +596,10 @@ const InterviewSetup = () => {
               </select>
               
               <p className="text-sm text-gray-500 mt-2">
-                {questionCountOptions.find(o => o.value === formData.questionCount)?.description}
+                {isQuickTest 
+                  ? 'Quick test is fixed at 2 questions for fast feedback testing'
+                  : questionCountOptions.find(o => o.value === formData.questionCount)?.description
+                }
               </p>
             </div>
           </div>

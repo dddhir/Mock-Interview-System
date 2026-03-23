@@ -121,4 +121,57 @@ router.put('/profile', protect, async (req, res) => {
     }
 });
 
+// Get user interview history
+router.get('/interview-history', protect, async (req, res) => {
+    try {
+        const user = await User.findById(req.user.id).select('interviewSessions');
+        
+        if (!user || !user.interviewSessions) {
+            return res.json({
+                success: true,
+                history: []
+            });
+        }
+
+        // Transform data for chart consumption
+        const history = user.interviewSessions
+            .filter(session => session.status === 'completed')
+            .map(session => {
+                const avgScore = session.totalScore / Math.max(session.questionsAsked.length, 1);
+                
+                // Calculate technical score (average of technical questions)
+                const technicalQuestions = session.questionsAsked.filter(qa => 
+                    qa.topic && !['HR', 'Behavioral', 'General'].includes(qa.topic)
+                );
+                const technicalScore = technicalQuestions.length > 0 
+                    ? technicalQuestions.reduce((sum, qa) => sum + (qa.score || 0), 0) / technicalQuestions.length
+                    : avgScore;
+
+                return {
+                    sessionId: session.sessionId,
+                    date: session.completedAt || session.createdAt,
+                    company: session.company,
+                    role: session.role,
+                    experience: session.experience,
+                    overallScore: avgScore,
+                    technicalScore: technicalScore,
+                    questionsAnswered: session.questionsAsked.length,
+                    duration: session.completedAt && session.createdAt 
+                        ? Math.round((new Date(session.completedAt) - new Date(session.createdAt)) / (1000 * 60)) + ' min'
+                        : null,
+                    topics: [...new Set(session.questionsAsked.map(qa => qa.topic).filter(Boolean))]
+                };
+            })
+            .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+        res.json({
+            success: true,
+            history
+        });
+    } catch (error) {
+        console.error('Interview history fetch error:', error);
+        res.status(500).json({ message: 'Server error fetching interview history' });
+    }
+});
+
 module.exports = router;

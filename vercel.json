@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "buildCommand": "cd client && npm install && npm run build",
+  "outputDirectory": "client/dist",
+  "env": {
+    "MONGODB_URI": "@mongodb_uri",
+    "GOOGLE_GENAI_API_KEY": "@google_genai_api_key",
+    "JWT_SECRET": "@jwt_secret",
+    "PORT": "3001"
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/server.js"
+    }
+  ]
+}

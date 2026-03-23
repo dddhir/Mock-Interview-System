@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { Clock, Send, SkipForward } from 'lucide-react'
 import axios from 'axios'
 import toast from 'react-hot-toast'
+import VoiceRecorder from '../components/VoiceRecorder'
 
 const Interview = () => {
   const { sessionId } = useParams()
@@ -22,9 +23,17 @@ const Interview = () => {
     return () => clearInterval(timer)
   }, [sessionId])
 
+  // Reset answer when question changes
+  useEffect(() => {
+    setAnswer('')
+  }, [currentQuestion?.id])
+
   const fetchSession = async () => {
     try {
-      const response = await axios.get(`/api/interview/session/${sessionId}`)
+      const token = localStorage.getItem('token')
+      const response = await axios.get(`/api/interview/session/${sessionId}`, {
+        headers: { Authorization: `Bearer ${token}` }
+      })
       const sessionData = response.data.session
       setSession(sessionData)
       
@@ -65,15 +74,41 @@ const Interview = () => {
     try {
       console.log('Submitting answer for question:', currentQuestion)
       
+      const token = localStorage.getItem('token')
       const response = await axios.post('/api/interview/submit-answer', {
         sessionId,
         questionId: currentQuestion?.id || 'generated',
         answer: answer.trim()
+      }, {
+        headers: { Authorization: `Bearer ${token}` }
       })
 
       if (response.data.success) {
-        // Show feedback
-        toast.success(`Score: ${response.data.evaluation.score}/10`)
+        const evaluation = response.data.evaluation;
+        
+        // Show enhanced feedback toast
+        if (evaluation.score !== undefined) {
+          const scoreColor = evaluation.score >= 8 ? '🟢' : evaluation.score >= 6 ? '🟡' : '🔴';
+          toast.success(`${scoreColor} Score: ${evaluation.score}/10`, {
+            duration: 3000
+          });
+          
+          // Show key feedback if available
+          if (evaluation.strengths && evaluation.strengths.length > 0) {
+            toast.success(`✅ ${evaluation.strengths[0]}`, {
+              duration: 4000
+            });
+          }
+          
+          if (evaluation.areas_for_improvement && evaluation.areas_for_improvement.length > 0) {
+            toast(`🎯 ${evaluation.areas_for_improvement[0]}`, {
+              duration: 4000,
+              icon: '💡'
+            });
+          }
+        } else {
+          toast.success(`Score: ${evaluation.score || 'N/A'}/10`);
+        }
         
         // Update session
         setSession(prev => ({
@@ -81,8 +116,8 @@ const Interview = () => {
           questionsAsked: [...prev.questionsAsked, {
             question: currentQuestion.text,
             answer: answer.trim(),
-            score: response.data.evaluation.score,
-            feedback: response.data.evaluation.feedback
+            score: evaluation.score || evaluation.score,
+            feedback: evaluation
           }],
           totalScore: response.data.totalScore
         }))
@@ -164,12 +199,12 @@ const Interview = () => {
       <div className="bg-white rounded-lg shadow-md p-6 mb-6">
         <div className="flex justify-between text-sm text-gray-600 mb-2">
           <span>Progress</span>
-          <span>{session.questionsAsked.length}/8 questions</span>
+          <span>{session.questionsAsked.length}/{session.maxQuestions || 8} questions</span>
         </div>
         <div className="w-full bg-gray-200 rounded-full h-2">
           <div 
             className="bg-primary-600 h-2 rounded-full transition-all duration-300"
-            style={{ width: `${(session.questionsAsked.length / 8) * 100}%` }}
+            style={{ width: `${(session.questionsAsked.length / (session.maxQuestions || 8)) * 100}%` }}
           ></div>
         </div>
       </div>
@@ -192,6 +227,12 @@ const Interview = () => {
           </div>
 
           <div className="space-y-4">
+            <VoiceRecorder
+              key={currentQuestion?.id || 'default'}
+              onTranscriptionComplete={(text) => setAnswer(text)}
+              onError={(error) => toast.error(error)}
+              disabled={submitting}
+            />
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 Your Answer
@@ -199,7 +240,7 @@ const Interview = () => {
               <textarea
                 value={answer}
                 onChange={(e) => setAnswer(e.target.value)}
-                placeholder="Type your answer here..."
+                placeholder="Type your answer here or use voice recording above..."
                 rows={6}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 resize-none"
               />
@@ -253,7 +294,20 @@ const Interview = () => {
                 </div>
                 <p className="text-gray-600 text-sm mb-2">{qa.answer}</p>
                 {qa.feedback && (
-                  <p className="text-gray-500 text-xs italic">{qa.feedback}</p>
+                  <div className="text-xs space-y-1">
+                    {typeof qa.feedback === 'string' ? (
+                      <p className="text-gray-500 italic">{qa.feedback}</p>
+                    ) : (
+                      <>
+                        {qa.feedback.strengths && qa.feedback.strengths.length > 0 && (
+                          <p className="text-green-600">✅ {qa.feedback.strengths[0]}</p>
+                        )}
+                        {qa.feedback.areas_for_improvement && qa.feedback.areas_for_improvement.length > 0 && (
+                          <p className="text-orange-600">🎯 {qa.feedback.areas_for_improvement[0]}</p>
+                        )}
+                      </>
+                    )}
+                  </div>
                 )}
               </div>
             ))}

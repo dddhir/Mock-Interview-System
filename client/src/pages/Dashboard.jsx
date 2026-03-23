@@ -113,7 +113,7 @@ const Dashboard = () => {
         </div>
 
         {/* Action Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Take Interview */}
           <div className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow">
             <div className="p-6">
@@ -129,6 +129,25 @@ const Dashboard = () => {
                 className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors font-medium"
               >
                 Start New Interview
+              </button>
+            </div>
+          </div>
+
+          {/* Quick Test */}
+          <div className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow">
+            <div className="p-6">
+              <div className="flex items-center justify-center w-12 h-12 bg-yellow-100 rounded-lg mb-4">
+                <Clock className="h-6 w-6 text-yellow-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Quick Test</h3>
+              <p className="text-gray-600 mb-4">
+                Take a quick 2-question test to try out the enhanced feedback system (~5 minutes).
+              </p>
+              <button
+                onClick={() => navigate('/interview-setup', { state: { quickTest: true } })}
+                className="w-full bg-yellow-600 text-white py-2 px-4 rounded-md hover:bg-yellow-700 transition-colors font-medium"
+              >
+                Quick Test
               </button>
             </div>
           </div>

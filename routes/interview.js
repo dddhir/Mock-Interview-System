@@ -1,6 +1,8 @@
 const express = require('express');
 const multer = require('multer');
 const Question = require('../models/Question');
+const User = require('../models/User');
+const { protect } = require('../middleware/auth');
 const geminiService = require('../services/geminiService');
 const companyRAGService = require('../services/companyRAGService');
 const interviewStateManager = require('../services/interviewStateManager');
@@ -85,8 +87,8 @@ const selectTopicByWeight = (weights) => {
     return topics[0];
 };
 
-// Initialize interview session (no authentication required)
-router.post('/start', async (req, res) => {
+// Initialize interview session (authentication required)
+router.post('/start', protect, async (req, res) => {
     try {
         const { company, role, experience, skills, resumeContent, projects, workExperience, questionCount } = req.body;
 
@@ -193,8 +195,8 @@ router.post('/start', async (req, res) => {
     }
 });
 
-// Submit answer and get next question
-router.post('/submit-answer', async (req, res) => {
+// Submit answer and get next question (authentication required)
+router.post('/submit-answer', protect, async (req, res) => {
     try {
         const { sessionId, questionId, answer } = req.body;
 
@@ -285,20 +287,15 @@ router.post('/submit-answer', async (req, res) => {
         if (wordCount >= 50) score += 1;
         if (keywordCount >= 2) score += 1;
         if (keywordCount >= 4) score += 1;
-        if (answer.includes('example') || answer.includes('instance')) score += 1;
+        // Use enhanced answer evaluator
+        console.log('🤖 Using enhanced AI evaluation with DistilBERT + Disfluency models...');
+        evaluation = await answerEvaluator.evaluateAnswer(questionText, answer, {
+            role: session.role,
+            experience: session.experience,
+            topic: questionTopic || 'General'
+        });
 
-        // Add some randomness for variety
-        score += Math.floor(Math.random() * 2);
-        score = Math.min(10, Math.max(3, score));
-
-        evaluation = {
-            score: score,
-            feedback: `Score: ${score}/10. ${score >= 7 ? 'Good technical answer!' : score >= 5 ? 'Adequate response.' : 'Could use more detail.'}`,
-            suggestions: "Continue with the interview.",
-            followUpTopics: []
-        };
-
-        console.log(`📊 Quick evaluation: ${score}/10 (${wordCount} words, ${keywordCount} tech keywords)`);
+        console.log(`📊 Enhanced evaluation: ${evaluation.score}/10 (AI-powered analysis)`);
 
         // Update interview state with new Q&A
         if (interviewState) {
@@ -342,38 +339,55 @@ router.post('/submit-answer', async (req, res) => {
         if (questionsAnswered >= maxQuestions) {
             sessionComplete = true;
             session.status = 'completed';
+            session.completedAt = new Date();
+            
+            // Save completed interview to user's history
+            try {
+                const avgScore = session.totalScore / Math.max(session.questionsAsked.length, 1);
+                const interviewData = {
+                    sessionId: session.sessionId,
+                    company: session.company,
+                    role: session.role,
+                    experience: session.experience,
+                    techStack: session.skills || [],
+                    currentRound: session.currentRound || 'technical',
+                    questionsAsked: session.questionsAsked.map(qa => ({
+                        question: qa.question,
+                        answer: qa.answer,
+                        score: qa.score,
+                        feedback: qa.feedback,
+                        topic: qa.topic || 'General',
+                        timestamp: qa.timestamp || new Date()
+                    })),
+                    totalScore: session.totalScore,
+                    status: 'completed',
+                    createdAt: session.createdAt || new Date(),
+                    completedAt: session.completedAt
+                };
+
+                await User.findByIdAndUpdate(
+                    req.user.id,
+                    { $push: { interviewSessions: interviewData } },
+                    { new: true }
+                );
+                
+                console.log(`💾 Saved interview to user history: ${avgScore.toFixed(1)}/10 average`);
+            } catch (error) {
+                console.error('Failed to save interview to user history:', error);
+                // Don't fail the request if history saving fails
+            }
+            
             console.log(`🎉 Interview complete!`);
         } else {
-            // Step 1: Ask Gemini if the answer was satisfactory for their level
-            let shouldMoveToNextTopic = false;
-            let geminiSuggestion = null;
-
-            try {
-                console.log('🤖 Asking Gemini to evaluate answer...');
-                const evalPrompt = `You are interviewing a ${session.experience} level candidate for ${session.role}.
-
-Question: "${questionText}"
-Answer: "${answer}"
-
-Is this answer satisfactory for a ${session.experience} level candidate?
-Reply ONLY with JSON: {"satisfied": true/false, "nextTopic": "suggested topic", "reason": "brief reason"}`;
-
-                const genAI = new (require('@google/generative-ai').GoogleGenerativeAI)(process.env.GOOGLE_GENAI_API_KEY);
-                const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
-                const result = await model.generateContent(evalPrompt);
-                const evalResponse = result.response.text().trim().replace(/```json\n?/g, '').replace(/```\n?/g, '');
-                geminiSuggestion = JSON.parse(evalResponse);
-                shouldMoveToNextTopic = geminiSuggestion.satisfied;
-                console.log(`🤖 Gemini: ${shouldMoveToNextTopic ? 'Move to next topic' : 'Need follow-up'}`);
-            } catch (error) {
-                console.log('Gemini eval skipped:', error.message);
-                shouldMoveToNextTopic = true;
-            }
+            // Step 1: Determine if we should move to next topic based on evaluation
+            let shouldMoveToNextTopic = answerEvaluator.isSatisfactory(evaluation);
+            
+            console.log(`🤖 Evaluation complete: ${evaluation.score}/10 - ${shouldMoveToNextTopic ? 'Move to next topic' : 'Need follow-up'}`);
 
             // Step 2: Build search terms from user profile
             const userSkills = session.skills || [];
-            const searchTerms = geminiSuggestion?.nextTopic
-                ? [geminiSuggestion.nextTopic, ...userSkills]
+            const searchTerms = shouldMoveToNextTopic 
+                ? [`Advanced ${session.currentTopic || 'concepts'}`, ...userSkills]
                 : userSkills;
 
             console.log(`🔍 Searching for: ${searchTerms.slice(0, 3).join(', ')}...`);
@@ -459,7 +473,7 @@ Reply ONLY with JSON: {"satisfied": true/false, "nextTopic": "suggested topic", 
 
         const response = {
             success: true,
-            evaluation,
+            evaluation: evaluation,
             sessionComplete,
             questionsAsked: session.questionsAsked.length,
             maxQuestions: session.maxQuestions || 10,
@@ -489,8 +503,8 @@ Reply ONLY with JSON: {"satisfied": true/false, "nextTopic": "suggested topic", 
     }
 });
 
-// Get interview session details
-router.get('/session/:sessionId', async (req, res) => {
+// Get interview session details (authentication required)
+router.get('/session/:sessionId', protect, async (req, res) => {
     try {
         const { sessionId } = req.params;
 
