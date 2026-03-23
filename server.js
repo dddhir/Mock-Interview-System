@@ -52,24 +52,27 @@ app.get('/api/health', (req, res) => {
     res.json({ status: 'OK', message: 'AI Mock Interview System is running' });
 });
 
-app.listen(PORT, async () => {
-    console.log(`Server running on port ${PORT}`);
+// Only listen locally, not on Vercel
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(PORT, async () => {
+        console.log(`Server running on port ${PORT}`);
 
-    // Run startup process (includes embedding generation if needed)
-    try {
-        console.log('🚀 Running startup process...');
-        const startupSuccess = await startup();
+        // Run startup process (includes embedding generation if needed)
+        try {
+            console.log('🚀 Running startup process...');
+            const startupSuccess = await startup();
 
-        if (startupSuccess) {
-            console.log('✅ System fully initialized and ready for interviews');
-        } else {
-            console.log('⚠️  Startup completed with warnings, but system is functional');
+            if (startupSuccess) {
+                console.log('✅ System fully initialized and ready for interviews');
+            } else {
+                console.log('⚠️  Startup completed with warnings, but system is functional');
+            }
+        } catch (error) {
+            console.error('⚠️  Startup process failed:', error);
+            console.log('🔄 Server will continue running with basic functionality');
         }
-    } catch (error) {
-        console.error('⚠️  Startup process failed:', error);
-        console.log('🔄 Server will continue running with basic functionality');
-    }
-});
+    });
+}
 
 // Export app for Vercel
 module.exports = app;
